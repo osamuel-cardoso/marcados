@@ -30,3 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   @apply font-text tracking-[0.008em] leading-[135%]
 }
+
+.carousel__wrapper::-webkit-scrollbar {
+  @apply w-1 h-2 md:w-2 md:h-2 cursor-grab
+}

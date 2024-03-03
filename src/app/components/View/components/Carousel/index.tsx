@@ -1,6 +1,11 @@
 import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
+import Image from 'next/image'
 import Marquee from 'react-fast-marquee'
+
+import sequence01 from '@/app/images/sequence-01.gif'
+import sequence02 from '@/app/images/sequence-02.gif'
+import sequence03 from '@/app/images/sequence-03.gif'
 
 export function Carousel() {
     return (
@@ -39,7 +44,23 @@ export function Carousel() {
                 </div>
                 <Container>
                     <div className="flex flex-col gap-14">
-                        <div></div>
+                        <div className="flex justify-center gap-3 overflow-x-scroll md:overflow-x-visible carousel__wrapper">
+                            <Image
+                                className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
+                                src={sequence01}
+                                alt="Imagem do carrossel"
+                            />
+                            <Image
+                                className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
+                                src={sequence02}
+                                alt="Imagem do carrossel"
+                            />
+                            <Image
+                                className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
+                                src={sequence03}
+                                alt="Imagem do carrossel"
+                            />
+                        </div>
                         <div className="flex flex-col gap-8">
                             <Divider />
                             <div className="w-full grid grid-cols-3 gap-4">
