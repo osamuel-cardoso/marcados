@@ -44,7 +44,7 @@ export function Carousel() {
                 </div>
                 <Container>
                     <div className="flex flex-col gap-14">
-                        <div className="flex md:justify-center gap-3 overflow-x-scroll md:overflow-x-visible carousel__wrapper">
+                        <div className="flex md:justify-center gap-3 overflow-x-scroll md:overflow-x-visible carousel__wrapper pb-2">
                             <Image
                                 className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
                                 src={sequence01}
@@ -63,7 +63,7 @@ export function Carousel() {
                         </div>
                         <div className="flex flex-col gap-8">
                             <Divider />
-                            <div className="w-full grid grid-cols-3 gap-4">
+                            <div className="w-full hidden md:grid md:grid-cols-3 gap-4">
                                 <div className="flex justify-between text-[.9375rem] font-bold">
                                     <span>UMA COMUNIDADE VIVA</span>
                                     <span>(01)</span>
