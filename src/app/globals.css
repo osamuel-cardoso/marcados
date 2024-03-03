@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  @apply font-text text-brand__gray-1000;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection{
+  @apply bg-brand__system-yellow text-brand__gray-100
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand__gray-300 rounded-full transition hover:bg-brand__gray-400
+}
+
+::-webkit-scrollbar {
+  @apply w-1 md:w-2 md:h-2 cursor-grab
+}
+
+::-webkit-scrollbar-track{
+  @apply bg-brand__gray-100
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display font-bold tracking-[-0.016em] leading-[105%]
+}
+
+p {
+  @apply font-text tracking-[0.008em] leading-[135%]
+}
