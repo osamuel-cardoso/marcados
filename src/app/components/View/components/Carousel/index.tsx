@@ -44,7 +44,7 @@ export function Carousel() {
                 </div>
                 <Container>
                     <div className="flex flex-col gap-14">
-                        <div className="flex justify-center gap-3 overflow-x-scroll md:overflow-x-visible carousel__wrapper">
+                        <div className="flex md:justify-center gap-3 overflow-x-scroll md:overflow-x-visible carousel__wrapper">
                             <Image
                                 className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
                                 src={sequence01}
