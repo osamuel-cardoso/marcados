@@ -81,7 +81,7 @@ export function Delivery() {
                                 <div className="flex items-center gap-3">
                                     <Countdown />
                                     <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-100 rounded-md uppercase text-[.8125rem]">
-                                        20% de desconto
+                                        R$400 OFF
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-[1.125rem]">
@@ -90,18 +90,21 @@ export function Delivery() {
                                             De R$2.100,90
                                         </span>
                                         <span className="uppercase text-[1.5625rem] leading-none font-bold text-brand__gray-1000">
-                                            12x R$588,78
+                                            12X R$120,48
                                         </span>
                                         <span className="uppercase text-[.9375rem] font-bold text-brand__gray-600">
-                                            ou R$1800,90 à vista
+                                            OU R$1200,00 À VISTA
                                         </span>
                                     </div>
 
                                     <Link
-                                        className="flex justify-center bg-brand__blue-700_base uppercase font-bold text-brand__gray/1000 rounded-[.25rem] text-[.8125rem] w-full px-4 py-[.875rem] transition hover:bg-brand__gray-100"
-                                        href={'/'}
+                                        className="flex justify-center bg-brand__system-yellow text-brand__gray-100 uppercase font-bold text-brand__gray/1000 rounded-[.25rem] text-[.8125rem] w-full px-4 py-[.875rem] transition hover:bg-brand__gray-100 hover:text-brand__gray-1000"
+                                        href={
+                                            'https://pay.kiwify.com.br/KXJzTMT'
+                                        }
+                                        target="_blank"
                                     >
-                                        entre para o marcados
+                                        Entre para o marcados
                                     </Link>
                                 </div>
                             </div>

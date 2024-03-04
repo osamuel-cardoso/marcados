@@ -14,7 +14,7 @@ export function Countdown() {
 
     useEffect(() => {
         const timerID = setInterval(() => {
-            setTime(getDifferenceBetweenDate('2024/03/08 19:30'))
+            setTime(getDifferenceBetweenDate('2024/03/06 23:59'))
         }, 1000)
 
         return () => {
@@ -47,8 +47,10 @@ export function Countdown() {
     const { days, hour, minutes, seconds } = time
 
     return (
-        <div className="flex h-[100%] bg-brand__blue-700_base px-[.6875rem] py-[.4375rem] rounded-md">
-            <span className="uppercase font-bold text-[.8125rem] md:text-[.9375rem]">{`${String(days).padStart(2, '0')}D ${String(hour).padStart(2, '0')}H ${String(minutes).padStart(2, '0')}Min ${String(seconds).padStart(2, '0')}S`}</span>
-        </div>
+        time.seconds !== undefined && (
+            <div className="flex h-[100%] bg-brand__blue-700_base px-[.6875rem] py-[.4375rem] rounded-md">
+                <span className="uppercase font-bold text-[.8125rem] md:text-[.9375rem]">{`${String(days).padStart(2, '0')}D ${String(hour).padStart(2, '0')}H ${String(minutes).padStart(2, '0')}Min ${String(seconds).padStart(2, '0')}S`}</span>
+            </div>
+        )
     )
 }

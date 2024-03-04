@@ -1,7 +1,7 @@
 import { cva, VariantProps } from 'class-variance-authority'
+import cn from 'clsx'
 import Link from 'next/link'
 import { UrlObject } from 'url'
-import cn from 'clsx'
 
 interface ButtonTypes extends VariantProps<typeof buttonVariants> {
     children: string
@@ -16,7 +16,7 @@ const buttonVariants = cva(
             variant: {
                 default:
                     'bg-brand__gray-1000 text-brand__gray-100 hover:border-brand__gray-300',
-                yellow: '',
+                yellow: 'bg-brand__system-yellow text-brand__gray-100 hover:border-brand__gray-300',
                 blue: 'bg-brand__blue-700_base text-brand__gray-1000 border-brand__blue-700_base hover:border-brand__gray-300',
             },
         },

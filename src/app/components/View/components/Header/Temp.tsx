@@ -14,7 +14,7 @@ export async function Temp() {
     const weatherResponse: WeatherData = data
 
     return (
-        <div className="px-[.5625rem] py-[.6875rem] text-brand__gray-100 bg-brand__gray-950 font-bold uppercase text-[.8125rem] md:text-[.875rem] rounded-md transition leading-none hover:bg-brand__blue-700_base hover:text-brand__gray-1000">
+        <div className="px-[.5625rem] py-[.6875rem] text-brand__gray-100 border-solid border-[1.9px] border-brand__gray-950 font-bold uppercase text-[.8125rem] md:text-[.875rem] rounded-md transition leading-none hover:bg-brand__blue-700_base hover:text-brand__gray-1000">
             {weatherResponse.main.temp_max} <span>GRAUS</span>
         </div>
     )

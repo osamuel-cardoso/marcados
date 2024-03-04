@@ -13,16 +13,17 @@ export function Order() {
                         De R$2.100,90
                     </span>
                     <span className="uppercase text-[1.5625rem] leading-none font-bold text-brand__gray-100">
-                        12x R$588,78
+                        12x R$120,48
                     </span>
                     <span className="uppercase text-[.9375rem] font-bold text-brand__gray-600">
-                        ou R$1800,90 à vista
+                        ou R$1200,00 à vista
                     </span>
                 </div>
 
                 <Link
-                    className="flex justify-center bg-brand__blue-700_base uppercase font-bold text-brand__gray/1000 rounded-[.25rem] text-[.8125rem] w-full px-4 py-[.875rem] transition hover:bg-brand__gray-100"
-                    href={'/'}
+                    className="flex justify-center bg-brand__system-yellow uppercase font-bold text-brand__gray-100 rounded-[.25rem] text-[.8125rem] w-full px-4 py-[.875rem] transition hover:bg-brand__gray-100 hover:text-brand__gray-1000"
+                    target="_blank"
+                    href={'https://pay.kiwify.com.br/KXJzTMT'}
                 >
                     entre para o marcados
                 </Link>

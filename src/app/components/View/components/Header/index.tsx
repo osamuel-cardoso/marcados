@@ -26,15 +26,15 @@ const lonaPhrases = [
 ]
 
 const subscribeDate = [
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
-    'inscrições até 24/11/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
+    'inscrições até 10/03/2024',
 ]
 
 export function Header() {
@@ -46,6 +46,8 @@ export function Header() {
                         <div className="flex items-center gap-8">
                             <Image
                                 className="h-7 w-7"
+                                quality={100}
+                                loading="eager"
                                 src={MarcadosBrand}
                                 alt="Símbolo do Marcados"
                             />

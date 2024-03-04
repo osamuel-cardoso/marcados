@@ -7,22 +7,37 @@ import { Countdown } from './Countdown'
 import { Feature } from './Feature'
 import { Offer } from './Offer'
 
-const features = [
+type FeaturesType = (
+    | {
+          title: string
+          label?: undefined
+      }
+    | {
+          title: string
+          label: string
+      }
+)[]
+
+const features: FeaturesType = [
     { title: '12 meses de acesso à comunidade' },
-    { title: '+100 aulas e contando' },
+    { title: '+130 aulas e contando', label: 'Atualização contínua' },
     { title: 'Encontros semanais ao vivo' },
     { title: 'Curso Método N.A.V.E' },
-    { title: 'Curso Código de Vendas' },
+    {
+        title: 'Curso Código de Vendas — temporada 1 e 2',
+        label: 'Atualização!',
+    },
     { title: 'Curso Branding 101' },
     { title: 'Projeto Vitória' },
     {
         title: 'Playlists didáticas e cronograma de conteúdo',
-        label: 'Novo!',
     },
     {
         title: 'Acesso ao grupo exclusivo no Telegram',
     },
     { title: 'Clube do Livro' },
+    { title: 'Templates', label: 'Novo!' },
+    { title: 'PNAC', label: 'Bônus!' },
 ]
 
 export function Pricing() {
@@ -42,7 +57,10 @@ export function Pricing() {
                             <div className="flex items-center gap-3">
                                 <Countdown />
                                 <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem]  md:text-[.9375rem] text-brand__gray-100 rounded-md uppercase">
-                                    20% de desconto
+                                    R$400 OFF
+                                </div>
+                                <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem]  md:text-[.9375rem] text-brand__gray-100 rounded-md uppercase">
+                                    +PNAC
                                 </div>
                             </div>
 
@@ -51,10 +69,10 @@ export function Pricing() {
                                     De R$2.100,90
                                 </span>
                                 <h3 className="text-[2.25rem] md:text-[4rem]">
-                                    12x R$588,78
+                                    12x R$120,48
                                 </h3>
                                 <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
-                                    ou R$1800,90 à vista
+                                    ou R$1200,00 à vista
                                 </span>
                             </div>
 
@@ -74,8 +92,8 @@ export function Pricing() {
                             </div>
 
                             <Button
-                                variant={'blue'}
-                                href={'/'}
+                                variant={'yellow'}
+                                href={'https://pay.kiwify.com.br/KXJzTMT'}
                             >
                                 Entre para o Marcados
                             </Button>
