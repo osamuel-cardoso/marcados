@@ -29,6 +29,7 @@ export function Course({
                 className="rounded-[.25rem]"
                 src={image}
                 alt="Imagem do curso fechado"
+                quality={100}
             />
         </div>
     )

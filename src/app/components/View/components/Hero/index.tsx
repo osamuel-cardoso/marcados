@@ -18,10 +18,12 @@ export function Hero() {
                             </h1>
                             <p className="max-w-[41.5rem] text-brand__blue-100 text-[1.0625rem] md:text-[1.125rem]">
                                 O Grupo Marcados é uma comunidade que une o
-                                business ao design. Aprenda posicionamento,
-                                negociação, prospecção, branding e (muito)
-                                mais. Vá além do Photoshop, fuja do mercado
-                                tóxico e torne-se um designer de negócios.
+                                business ao design. Domine os 3 pilares
+                                (branding, estratégia e business) para se tornar
+                                um especialista, construir autoridade e ser
+                                visto como um parceiro estratégico. Vá além do
+                                Photoshop, fuja do mercado tóxico e torne-se um
+                                designer de negócios.
                             </p>
                         </div>
                     </div>

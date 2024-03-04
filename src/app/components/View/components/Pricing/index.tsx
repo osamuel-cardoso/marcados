@@ -77,10 +77,10 @@ export function Pricing() {
                             </div>
 
                             <div className="flex flex-col gap-6">
-                                <Feature
+                                {/* <Feature
                                     title="Parcele no boleto em 24x"
                                     subtitle="Sujeito à análise."
-                                />
+                                /> */}
                                 <Feature
                                     title="Compra 100% segura"
                                     subtitle="Utilizamos a Kiwify como gateway de pagamento."

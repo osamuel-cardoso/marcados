@@ -66,15 +66,15 @@ export function Carousel() {
                             <div className="w-full hidden md:grid md:grid-cols-3 gap-4">
                                 <div className="flex justify-between text-[.9375rem] font-bold">
                                     <span>UMA COMUNIDADE VIVA</span>
-                                    <span>(01)</span>
+                                    {/* <span>(01)</span> */}
                                 </div>
                                 <div className="flex justify-between text-[.9375rem] font-bold">
                                     <span>QUE RESPIRA CRIATIVIDADE</span>
-                                    <span>(02)</span>
+                                    {/* <span>(02)</span> */}
                                 </div>
                                 <div className="flex justify-between text-[.9375rem] font-bold">
                                     <span>E ESTRUTURA NEGÓCIOS</span>
-                                    <span>(03)</span>
+                                    {/* <span>(03)</span> */}
                                 </div>
                             </div>
                         </div>

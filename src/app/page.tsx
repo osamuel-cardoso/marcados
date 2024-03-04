@@ -12,6 +12,17 @@ import { Questions } from './components/View/components/Questions'
 export default function Initial() {
     return (
         <>
+            <noscript>
+                <iframe
+                    src="https://www.googletagmanager.com/ns.html?id=GTM-MFXQDVC"
+                    height="0"
+                    width="0"
+                    style={{
+                        display: 'none',
+                        visibility: 'hidden',
+                    }}
+                ></iframe>
+            </noscript>
             <Header />
             <Hero />
             <Inside />
