@@ -35,9 +35,9 @@ export function Modal({
     return (
         <div
             onClick={onDismount}
-            className="w-screen h-screen bg-brand__gray-100 fixed left-0 top-0 bottom-0 right-0 z-10 bg-opacity-80 backdrop-blur-md"
+            className="w-screen h-screen bg-brand__gray-100 fixed left-0 top-0 bottom-0 right-0 bg-opacity-80 backdrop-blur-md"
         >
-            <div className="flex items-center justify-center h-full w-full p-4">
+            <div className="relative flex items-center justify-center h-full w-full p-4">
                 <div className="p-8 overflow-y-auto max-h-[64vh] bg-brand__gray-100 max-w-[37.75rem] flex flex-col gap-4 rounded-lg z-10">
                     <div className="flex items-center gap-3">
                         <div className="rounded-full overflow-hidden h-[3rem] w-[3rem]">
@@ -57,6 +57,18 @@ export function Modal({
                         </div>
                     </div>
                     <Formatter content={content} />
+                </div>
+                <div className="text-brand__gray-600 absolute z-10 right-[2vh] top-[2vh] p-4 transition cursor-pointer hover:text-brand__gray-1000">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-6 h-6"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"
+                        ></path>
+                    </svg>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ import { Inside } from '../components/View/components/Inside'
 import { Pricing } from '../components/View/components/Pricing'
 import { Questions } from '../components/View/components/Questions'
 
-export default function page() {
+export default function Page() {
     return (
         <>
             <noscript>
