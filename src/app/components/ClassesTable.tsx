@@ -13,7 +13,7 @@ export async function ClassesTable() {
     const databaseResponseData: Page[] = data
 
     return (
-        <div className="overflow-x-scroll pb-3 classes__table">
+        <div className="overflow-x-scroll md:overflow-x-visible pb-3 classes__table">
             <div className="mb-9 grid grid-cols-4 gap-x-4 w-[82rem]">
                 <span>Aulas</span>
 
