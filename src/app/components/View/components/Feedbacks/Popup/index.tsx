@@ -1,6 +1,7 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import { useEffect } from 'react'
+import { Formatter } from './Formater'
 
 export function Modal({
     name,
@@ -55,9 +56,7 @@ export function Modal({
                             </p>
                         </div>
                     </div>
-                    <p className="font-regular text-[.9375rem] md:text-[1.0625rem] text-brand__gray-600 leading-snug">
-                        {content}
-                    </p>
+                    <Formatter content={content} />
                 </div>
             </div>
         </div>
