@@ -4,7 +4,7 @@ import { ClassesTable } from '../../../ClassesTable'
 
 export function Classes() {
     return (
-        <section className="bg-brand__gray-100 py-20 md:py-28">
+        <section className="bg-brand__gray-100 py-20 md:py-28 overflow-x-hidden">
             <Container>
                 <div className="flex flex-col gap-[5.5rem]">
                     <div className="flex flex-col gap-11 md:flex-row md:justify-between">
@@ -16,9 +16,8 @@ export function Classes() {
                             </p>
                         </div>
                     </div>
-                    <div>
-                        <ClassesTable />
-                    </div>
+
+                    <ClassesTable />
                 </div>
             </Container>
         </section>

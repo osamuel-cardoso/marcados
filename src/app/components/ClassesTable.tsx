@@ -13,43 +13,29 @@ export async function ClassesTable() {
     const databaseResponseData: Page[] = data
 
     return (
-        <>
-            <table className="w-full">
-                <thead className="hidden md:block w-full mb-9">
-                    <tr className="w-full flex gap-4">
-                        <td className="w-[33.33%]">
-                            <span>Aulas</span>
-                        </td>
+        <div className="overflow-x-scroll pb-3 classes__table">
+            <div className="mb-9 grid grid-cols-4 gap-x-4 w-[82rem]">
+                <span>Aulas</span>
 
-                        <td className="w-[25%]">
-                            <span>Playlist</span>
-                        </td>
+                <span>Playlist</span>
 
-                        <td className="w-[25%]">
-                            <span>Fase</span>
-                        </td>
+                <span>Fase</span>
 
-                        <td className="w-[16.67%]">
-                            <span>Formato</span>
-                        </td>
-                    </tr>
-                </thead>
-                <tbody className="flex flex-col gap-4">
-                    {databaseResponseData.map((result) => (
-                        <Row
-                            key={result.id}
-                            title={result.properties.Aulas.title[0]?.plain_text}
-                            playlist={
-                                result.properties.Playlist.multi_select[0]?.name
-                            }
-                            format={
-                                result.properties.Formato.multi_select[0]?.name
-                            }
-                            step={result.properties.Fase.select?.name}
-                        />
-                    ))}
-                </tbody>
-            </table>
-        </>
+                <span>Formato</span>
+            </div>
+            <div className="grid grid-rows-[auto] gap-3 w-[82rem]">
+                {databaseResponseData.slice(0, 12).map((result) => (
+                    <Row
+                        key={result.id}
+                        title={result.properties.Aulas.title[0]?.plain_text}
+                        playlist={
+                            result.properties.Playlist.multi_select[0]?.name
+                        }
+                        format={result.properties.Formato.multi_select[0]?.name}
+                        step={result.properties.Fase.select?.name}
+                    />
+                ))}
+            </div>
+        </div>
     )
 }

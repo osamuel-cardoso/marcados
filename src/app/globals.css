@@ -31,6 +31,6 @@ p {
   @apply font-text tracking-[0.008em] leading-[135%]
 }
 
-.carousel__wrapper::-webkit-scrollbar {
+.carousel__wrapper::-webkit-scrollbar, .classes__table::-webkit-scrollbar {
   @apply w-1 h-2 md:w-2 md:h-2 cursor-grab
 }

@@ -15,7 +15,6 @@ async function getNotionData() {
                 direction: 'ascending',
             },
         ],
-        page_size: 15,
     })
 
     return res.results.map((result) => {

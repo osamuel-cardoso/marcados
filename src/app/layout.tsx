@@ -120,7 +120,7 @@ export default function RootLayout({
             lang="pt-BR"
             className={`${neueHaasDisplay.variable} ${neueHaasText.variable}`}
         >
-            <body className="overflow-x-hidden">{children}</body>
+            <body>{children}</body>
         </html>
     )
 }

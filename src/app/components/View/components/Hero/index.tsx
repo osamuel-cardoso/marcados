@@ -1,5 +1,7 @@
 import { Container } from '@/app/components/Container'
 import { MarcadosBrand } from '@/app/components/icons/MarcadosBrand'
+import videoThumbnail from '@/app/images/video__background.png'
+import Image from 'next/image'
 import { FeatureCards } from '../FeatureCards'
 import { Video } from '../Video'
 
@@ -26,6 +28,13 @@ export function Hero() {
 
                     <div className="flex flex-col gap-4">
                         <Video
+                            light={
+                                <Image
+                                    className="overflow-hidden rounded-2xl"
+                                    src={videoThumbnail}
+                                    alt="Thumbnail do Vídeo"
+                                />
+                            }
                             controls
                             url={
                                 'https://player.vimeo.com/video/881866338?app_id=122963&referrer=https%3A%2F%2Fwww.marcados.me%2F'

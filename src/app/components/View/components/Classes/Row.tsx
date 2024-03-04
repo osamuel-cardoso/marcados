@@ -13,52 +13,39 @@ export default function Row({
     format?: string
 }) {
     return (
-        title && (
-            <tr className="flex flex-col md:flex-row md:items-center w-full gap-4 pb-[.875rem] border-b border-solid border-brand__gray-300">
-                <td className="md:w-[33.33%]">
-                    <div className="flex flex-col gap-4 md:flex-row md:gap-1 md:items-center">
-                        <span>
-                            <Image
-                                src={playIcon}
-                                alt="Ícone de Play"
-                            />
-                        </span>
-                        <span className="truncate max-w-[21.25rem]">
-                            {title}
-                        </span>
+        <div className="grid grid-cols-4 gap-x-4 pb-[.875rem] border-b border-solid border-brand__gray-300 w-full">
+            <div className="flex gap-1 items-center">
+                <Image
+                    src={playIcon}
+                    alt="Ícone de Play"
+                />
+
+                <div className="truncate max-w-[18rem]">{title}</div>
+            </div>
+
+            {playlist && (
+                <div className="flex gap-1 items-center">
+                    <div className="py-[.3125rem] px-[.6875rem] bg-brand__gray-300 text-brand__gray-800 rounded-full text-[.9375rem]">
+                        {playlist}
                     </div>
-                </td>
+                </div>
+            )}
 
-                <td className="md:w-[25%]">
-                    {playlist && (
-                        <div className="flex gap-1 items-center">
-                            <span className="py-[.3125rem] px-[.6875rem] bg-brand__gray-300 text-brand__gray-800 rounded-full text-[.9375rem] truncate max-w-[21.25rem]">
-                                {playlist}
-                            </span>
-                        </div>
-                    )}
-                </td>
+            {step && (
+                <div className="flex gap-1 items-center">
+                    <div className="py-[.3125rem] px-[.6875rem] bg-brand__gray-300 text-brand__gray-800 rounded-full text-[.9375rem]">
+                        {step}
+                    </div>
+                </div>
+            )}
 
-                <td className="md:w-[25%]">
-                    {step && (
-                        <div className="flex gap-1 items-center">
-                            <span className="py-[.3125rem] px-[.6875rem] bg-brand__gray-300 text-brand__gray-800 rounded-full text-[.9375rem]">
-                                {step}
-                            </span>
-                        </div>
-                    )}
-                </td>
-
-                <td className="md:w-[16.67%]">
-                    {format && (
-                        <div className="flex gap-1 items-center">
-                            <span className="py-[.3125rem] px-[.6875rem] bg-brand__gray-300 text-brand__gray-800 rounded-full text-[.9375rem]">
-                                {format}
-                            </span>
-                        </div>
-                    )}
-                </td>
-            </tr>
-        )
+            {format && (
+                <div className="flex gap-1 items-center">
+                    <div className="py-[.3125rem] px-[.6875rem] bg-brand__gray-300 text-brand__gray-800 rounded-full text-[.9375rem]">
+                        {format}
+                    </div>
+                </div>
+            )}
+        </div>
     )
 }

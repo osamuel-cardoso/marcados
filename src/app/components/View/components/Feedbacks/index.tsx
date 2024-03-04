@@ -20,7 +20,7 @@ export function Feedbacks() {
                         </p>
                     </div>
 
-                    <div className="flex flex-col items-center md:gap-8">
+                    <div className="flex flex-col items-center gap-2 md:gap-8">
                         <Slider />
                         <span className="text-[.8125rem] md:text-[.9375rem] rounded-full  border-[.0938rem] border-solid border-brand__gray-200 px-[.8125rem] py-[.4375rem]">
                             Arraste para o lado 👆

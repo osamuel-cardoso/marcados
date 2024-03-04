@@ -9,7 +9,7 @@ import sequence03 from '@/app/images/sequence-03.gif'
 
 export function Carousel() {
     return (
-        <section className="bg-brand__gray-100 py-20 md:py-28">
+        <section className="bg-brand__gray-100 py-20 md:py-28 overflow-x-hidden">
             <div className="flex flex-col gap-5">
                 <div className="flex flex-col gap-2">
                     <Marquee
@@ -44,19 +44,19 @@ export function Carousel() {
                 </div>
                 <Container>
                     <div className="flex flex-col gap-8 md:gap-14">
-                        <div className="flex md:justify-center gap-3 overflow-x-scroll md:overflow-x-visible carousel__wrapper pb-2">
+                        <div className="flex w-full md:justify-center gap-3 overflow-x-scroll md:overflow-x-visible carousel__wrapper pb-2">
                             <Image
-                                className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
+                                className="md:max-h-[42.375rem] w-full rounded-lg object-cover"
                                 src={sequence01}
                                 alt="Imagem do carrossel"
                             />
                             <Image
-                                className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
+                                className="md:max-h-[42.375rem] w-full rounded-lg object-cover"
                                 src={sequence02}
                                 alt="Imagem do carrossel"
                             />
                             <Image
-                                className="max-h-[37.75rem] md:max-h-[42.375rem] w-full rounded-lg object-cover"
+                                className="md:max-h-[42.375rem] w-full rounded-lg object-cover"
                                 src={sequence03}
                                 alt="Imagem do carrossel"
                             />
