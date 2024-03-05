@@ -2,9 +2,7 @@ import { WeatherData } from '@/@types/weather'
 
 async function getWeather() {
     const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/weather`, {
-        next: {
-            revalidate: 21600,
-        },
+        cache: 'no-store',
     })
     return res.json()
 }
