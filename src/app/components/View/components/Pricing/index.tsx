@@ -3,7 +3,7 @@ import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
 
-import templateImg from '@/app/images/img__template.png'
+import pnacImg from '@/app/images/pnac__thumbnail.png'
 import Image from 'next/image'
 import { Countdown } from './Countdown'
 import { Feature } from './Feature'
@@ -111,7 +111,7 @@ export function Pricing() {
                                     clientes. O PNAC.
                                 </h3>
                                 <Image
-                                    src={templateImg}
+                                    src={pnacImg}
                                     alt="Imagem dos templates"
                                     quality={100}
                                 />
