@@ -2,7 +2,7 @@ import { Page } from '@/@types/notion'
 import Row from './View/components/Classes/Row'
 
 async function getNotionDatabasesData() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/classes`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/classes`, {
         cache: 'no-cache',
     })
     return res.json()
