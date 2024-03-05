@@ -6,7 +6,7 @@ export function Heading({ heading, cap }: { heading: string; cap?: string }) {
             </h2>
 
             {cap && (
-                <span className="text-[.9375rem] text-brand__gray-600 md:text-brand__gray-1000 md:text-right max-w-[22rem] md:uppercase font-text md:font-bold">
+                <span className="text-[.875rem] text-brand__gray-600 md:text-brand__gray-1000 md:text-right max-w-[22rem] md:uppercase font-text md:font-bold">
                     {cap}
                 </span>
             )}

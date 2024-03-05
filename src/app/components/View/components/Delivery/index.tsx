@@ -80,7 +80,10 @@ export function Delivery() {
                             <div className="w-full  bg-brand__gray-200  rounded-xl p-4 flex flex-col gap-12">
                                 <div className="flex items-center gap-3">
                                     <Countdown />
-                                    <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-100 rounded-md uppercase text-[.8125rem]">
+                                    <div className="bg-brand__blue-700_base px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-1000 rounded-md uppercase text-[.8125rem]">
+                                        🎁 PNAC
+                                    </div>
+                                    <div className="bg-brand__blue-700_base px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-1000 rounded-md uppercase text-[.8125rem]">
                                         R$400 OFF
                                     </div>
                                 </div>

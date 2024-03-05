@@ -1,13 +1,23 @@
 import Link from 'next/link'
+import { Countdown } from '../View/components/Pricing/Countdown'
 
 export function Order() {
     return (
         <div className="w-full  bg-brand__gray-1000 rounded-xl p-4 flex flex-col gap-12">
-            <h3 className="text-brand__gray-100 leading-tight uppercase text-[.9375rem] md:text-[1.1875rem]">
+            <h3 className="text-brand__gray-100 leading-tight uppercase text-[.9375rem] md:text-[1.0625rem]">
                 Clique no botão abaixo e faça sua inscrição para entrar no Grupo
                 Marcados.
             </h3>
             <div className="flex flex-col gap-[1.125rem]">
+                <div className="flex items-center gap-2">
+                    <Countdown />
+                    <div className="bg-brand__gray-100 px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-1000 rounded-md uppercase text-[.8125rem]">
+                        R$400 OFF
+                    </div>
+                    <div className="bg-brand__gray-100 px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-1000 rounded-md uppercase text-[.8125rem]">
+                        🎁 PNAC
+                    </div>
+                </div>
                 <div className="flex flex-col">
                     <span className="uppercase text-[.9375rem] line-through font-bold text-brand__gray-600">
                         De R$2.100,90

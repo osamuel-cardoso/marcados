@@ -9,7 +9,7 @@ export function FeatureCards() {
             </div>
             <div className="bg-brand__gray-100 w-full flex flex-col gap-8 md:justify-between rounded-xl p-4">
                 <div className="w-full flex flex-col-reverse gap-4 md:flex-row justify-between">
-                    <h3 className="text-[.9375rem] md:text-[1.1875rem] max-w-[36.125rem] uppercase leading-[135%]">
+                    <h3 className="text-[.9375rem] md:text-[1.0625rem] max-w-[36.125rem] uppercase leading-[135%]">
                         São mais de 150 aulas, todas com materiais de apoio,
                         slides e exercícios. Receba todo o direcionamento
                         necessário para ser um designer que é pago para pensar.
