@@ -16,6 +16,9 @@ export function OverviewVideo() {
                     className="rounded-lg w-full h-full overflow-hidden"
                     width={'100%'}
                     controls={false}
+                    style={{
+                        borderRadius: '1rem',
+                    }}
                     playsinline
                     height={'100%'}
                     url={'https://youtu.be/lB5nJjLugzE'}
