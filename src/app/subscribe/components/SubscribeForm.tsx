@@ -101,7 +101,7 @@ export function Subscribe() {
                     </span>
                 </label>
                 <button
-                    className="w-full px-4 py-5 md:px-7 text-[.9375rem]  md:py-6 rounded font-bold text-center uppercase transition border border-solid border-brand__gray-300 hover:bg-brand__blue-700_base hover:text-brand__gray-1000"
+                    className="w-full px-4 py-5 md:px-7 text-[.9375rem] md:py-6 rounded bg-brand__blue-700_base font-bold text-center uppercase transition border border-solid border-[transparent]  hover:border-brand__gray-300 hover:bg-[transparent] hover:text-brand__gray-1000"
                     disabled={isSubmitting}
                     type="submit"
                 >
