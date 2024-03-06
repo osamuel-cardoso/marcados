@@ -105,7 +105,7 @@ export const metadata: Metadata = {
         url: `${process.env.NEXT_PUBLIC_URL}`,
         locale: 'pt-BR',
         siteName: 'Grupo Marcados®',
-        images: ['./images/Ⓜ️ _ Opengraph.svg'],
+        images: ['/public/Ⓜ️ _ Opengraph.svg'],
     },
     description:
         'Grupo Marcados, uma comunidade de designers e criativos trabalhando com branding. Uma biblioteca de conteúdo com mais de 50h de aulas sobre design, branding, estratégia e o business do design.',
