@@ -1,7 +1,10 @@
 'use client'
 
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import ReactPlayer from 'react-player'
+
+import youtubeThumb from '@/app/images/youtube__thumbnail.png'
 
 export function OverviewVideo() {
     const [hasWindow, setHasWindow] = useState(false)
@@ -19,6 +22,12 @@ export function OverviewVideo() {
                     style={{
                         borderRadius: '1rem',
                     }}
+                    light={
+                        <Image
+                            src={youtubeThumb}
+                            alt="Thumbnail"
+                        />
+                    }
                     playsinline
                     height={'100%'}
                     url={'https://youtu.be/lB5nJjLugzE'}

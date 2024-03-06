@@ -94,7 +94,7 @@ export function Pricing() {
                                 </div>
                                 <Button
                                     variant={'yellow'}
-                                    href={'https://pay.kiwify.com.br/KXJzTMT'}
+                                    href={'/subscribe'}
                                 >
                                     Entre para o Marcados
                                 </Button>

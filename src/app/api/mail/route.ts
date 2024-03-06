@@ -15,9 +15,9 @@ export async function POST(request: Request, response: Response) {
 
     try {
         const { data, error } = await resend.emails.send({
-            from: `Andre Lona <hello@samuelcardoso.me>`,
-            to: ['andre@manifesto-branding.com'],
-            subject: `Olá, ${leadName.charAt(0).toUpperCase() + leadName.slice(1)}! Bem vindo ao Marcados! Ⓜ️`,
+            from: `Ecossistema MarcadosⓂ️ <marketing@marcados.me>`,
+            to: ['samuelcardoso555@gmail.com', 'oi@marcados.me'],
+            subject: `Atenção! Lead em processo de compra! Ⓜ️`,
             html: `${leadName} ${leadEmail} ${phoneNumber}`,
         })
 
