@@ -6,10 +6,10 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 const leadSchema = z.object({
-    leadName: z.string().min(1, 'Por favor, preencha seu nome.'),
+    leadName: z.string().min(2, 'Por favor, preencha seu nome.'),
 
     leadEmail: z.string().email('Informe um endereço de e-mail válido'),
-    phoneNumber: z.string().min(1, 'Digite um número de telefone válido'),
+    phoneNumber: z.string().min(2, 'Digite um número de telefone válido'),
 })
 
 type LeadSchema = z.infer<typeof leadSchema>
