@@ -3,8 +3,8 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Modal } from './View/components/Feedbacks/Popup'
 import { CreateModalPortal } from './CreateModal'
+import { Modal } from './View/components/Feedbacks/Popup'
 
 export function Card({
     profile,
@@ -50,12 +50,14 @@ export function Card({
                         <p className="leading-[150%] text-[.9375rem]  md:text-[1.0625rem] text-brand__gray-600">
                             {resume}
                         </p>
-                        <button
-                            onClick={handleMountModal}
-                            className="px-7 py-4 w-full bg-brand__gray-100 font-bold uppercase text-[.9375rem] rounded-md transition hover:bg-brand__gray-300"
-                        >
-                            Ver depoimento
-                        </button>
+                        {content && (
+                            <button
+                                onClick={handleMountModal}
+                                className="px-7 py-4 w-full bg-brand__gray-100 font-bold uppercase text-[.9375rem] rounded-md transition hover:bg-brand__gray-300"
+                            >
+                                Ver depoimento
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>

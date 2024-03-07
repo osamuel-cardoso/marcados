@@ -11,13 +11,19 @@ import paula from '@/app/images/paula.png'
 import paulo from '@/app/images/paulo.png'
 import rocio from '@/app/images/rocio-e-wagner.png'
 import vic from '@/app/images/vic.png'
+import malu from '@/app/images/malu-fiusa.jpg'
+import gava from '@/app/images/thiago-gava.jpg'
+import rbr from '@/app/images/rbr-design.jpg'
+import verarto from '@/app/images/victor-verardo.jpg'
+import hunting from '@/app/images/hunting-words.jpg'
+import leon from '@/app/images/leondiasg.jpg'
 
 const feedbacks = [
     {
-        name: 'PAULO NOGAROL',
-        username: '@PAULONOGAROL',
+        name: 'Thiago Gava',
+        username: '@THIIAGOGAVA',
         profile: paulo,
-        resume: 'Fechei meu primeiro grande projeto de estratégia. Um contrato de R$18K. Somente de estratégia, sem nenhuma peça gráfica. Só estratégia. Ah, e sem proposta. Fechado na reunião de diagnóstico, aula 18 rs.',
+        resume: 'Agora seguinte, um injeção de ânimo pra quem ainda está estruturando seus processos ou começando.',
         content: `Marcados, queria compartilhar aqui uma experiência que me marcou. Segura que vem textão, pega seu café. Na verdade, acredito que a @alennattavares já deve estar na terceira dose 😄
         Um dos piores momentos que um empresário pode passar é a escassez financeira em seu negócio. E vivi estes momentos por vários meses desde 2022.
         Pensei em desistir. Pensei em ir pro mercado.
@@ -135,6 +141,59 @@ const feedbacks = [
         Ainda não nichei como havíamos conversado mas estudei aula 8 e 51 apliquei como pude. Atingi pela primeira vez 3x o meu faturamento médio em um mês... ainda não consegui bater os 30k que conversamos aquele dia mas o ticket médio mais que dobrou e acredito que em breve chego lá.
         Obrigada pelas palavras aquele dia e pelas aulas. Ⓜ️`,
     },
+    {
+        name: 'Thiago Gava',
+        username: '@THIIAGOGAVA',
+        profile: gava,
+        resume: 'Agora seguinte, uma injeção de ânimo pra quem ainda está estruturando seus processos ou começando...',
+        content: `No início do mês passada, eu compartilhei aqui que tinha sido vítima do layoff lá na empresa. Desde Janeiro de 2021 eu vinha ensaiando uma transição de carreira, que foi quando conheci o Marcados (entrei no primeiro lançamento). Pois bem, ainda tava bem perdido, aprendendo diversas técnicas e ferramentas. Bom, acabei deixando algumas coisas de lado, como ter meu estúdio/consultoria não era minha fonte de renda principal, sempre empurrava com a barriga.
+        Pois bem, entrei na Adventures (pra quem não conhece, é empresa fundada pelo Rapha Avellar e o Ricardo Dias ex CMO global da Ambev. Lançada para criar marcas de influenciadores) na vertical de agência e depois migrei para área de brands, já planejava isso a muito tempo, pois via como oportunidade perfeita não só pra aplicar todo o conhecimento que vinha adquirindo, mas Tbm pra finalmente fazer a transição que queria, além de ter Tbm a oportunidade de ser sócio.
+        Bom, então eu já não me posicionava e pegava projetos relevantes já tinha uns 2 anos, nem prospecção tava fazendo.
+        Bom, a empresa precisou reduzir 60% da operação e eu fui cortado. Nesse momento pensei: ou arrumo um trampo qlqr na área pra manter minhas contas, já que me mudei do interior de SP e vim morar aqui na capital ouuuu eu faço minha empresa acontecer. Como um bom empreendedor o que eu fiz? Fiz minha empresa acontecer. E conciliou bem nesse período de nicho e posicionamento que o André vem fazendo. Eu tinha uma pequena reserva que me manteria por uns 2 meses + o proporcional de agosto que recebi. Pensei, é o tempo que preciso.
+        Eu voltei a comer o marcados de colher com aveia e whey, pra ficar grandão kkkk… pois bem, peguei todo meu conhecimento, encontrei os gap no mercado, envelopei tudo usando o Nave + meu processo que já tinha. E comecei a usar meu LinkedIn que já vinha criando conteúdo todos os dias já tem uns 5 meses.
+        Há uns 10 dias mais ou menos, um dono de uma indústria de perfume que faz marca própria, licenciados e marcas de influencer, por meio do meu LK, me chamou pra uma possível demanda. Conversa vai, conversa vem. Mandei um primeiro orçamento. Ele gostou mas pediu umas considerações com novos SKUs, ajustei. Ontem ele me liga pra bater o martelo, sem questionar o preço e pagamento à vista antecipado e hoje ele acabou de assinar o contrato.
+        Reflexão disso tudo. NICHEM E SE POSICIONEM e pensem com cabeça de empresário e não um prestador de serviço. Se você é dono do seu negócio, saiba que tem muita coisa pra você fazer além do operacional. Em 50 dias eu sai de 0 reais de faturamento pra um faturamento de 5 dígitos sem o clientes questionar.     
+        PS: é um projeto de embalagem, eu adaptei o nave junto com meu método pra estruturar o processo e o cliente amou.`,
+    },
+    {
+        name: 'Victor Verardo ',
+        username: '@victorverardo',
+        profile: verarto,
+        resume: `As mudanças no meu negócio:
+
+        - Expandir o escopo de branding nos projetos
+        - Maior consciência sobre fundamentos do branding
+        - Fechar trabalhos com valores de orçamento até 3 vezes maior (com maior entrega também)
+        - Dificuldade na transição entre clientes antigos e novos, como entender o cenário de projetos de branding completo vs apenas identidade visual
+        - Expandir rede de contato de profissionais`,
+    },
+    {
+        name: 'Malu Fiusa',
+        username: '@malufiusa.brand',
+        profile: malu,
+        resume: `Nossa, mudou tudo.
+        Como já falei com o André muitas vezes, o marcados não mudou só possibilitou que eu adaptasse a metodologia de criação, mas principalmente a minha mentalidade como empreendedora criativa. Me ajudou com processo de vendas, estrutura e como melhor apresentar a empresa..`,
+        content: `Hoje cobro 6x mais do que cobrava quando entrei na comunidade, o tipo de cliente que atendo e nível de entrega que ofereço é completamente diferente. Só tenho a agradecer pelo conhecimento e direcionamento compartilhados. (:`,
+    },
+    {
+        name: 'Joe Sebastiany',
+        username: '@hunting.words',
+        profile: hunting,
+        resume: 'Então, acredito que a principal delas foi a confiança na minha entrega, que ganhou força justamente por esse olhar mais do business. Olhar com cuidado pra parte do negócio é o principal ganho que o marcados me deu. Com os aprendizados, consegui olhar pra minhas entregas com o olhar do cliente, e nessa mudança de perspectiva, valorizei mais o que faço. ',
+        content: `
+        Naturalmente, o preço dobrou, tenho confiança pra negociar e estou vivendo o que chamo de 'efeito marcados', que me faz poder escolher projetos que me empolgam de verdade e não aceitar tudo que aparece. Esse é inclusive, o meu desafio do momento: aprender a dizer não.
+        O que me ajudaria seriam justamente conteúdos pra reforçar ainda mais a confiança na hora de me posicionar. 
+        TLDR: Clareza e autoconfiança criativa, tanto em entrega, mas principalmente em negócio.`,
+    },
+    {
+        name: 'Leon Dias',
+        username: '@leondiasg',
+        profile: leon,
+        resume: 'O Marcados me trouxe estrutura e método pra que eu tenha mais confiança e certeza de que posso atuar de forma positiva nos negócios dos meus clientes. Agora realmente sei o que estou fazendo.',
+        content: `Desde que entrei, consegui aumentar em 40% o meu faturamento. Ainda não estou onde gostaria, mas tenho a base pra chegar lá.
+        Fora isso, sou muito ajudado por ter também profissionais externos, com outras visões, e pela troca que ocorre na comunidade.
+        Não me vejo mais fora daqui.,`,
+    },
 ]
 
 const AdaptiveHeight: KeenSliderPlugin = (slider) => {
@@ -184,7 +243,7 @@ export function Slider() {
                         name={feedback.name}
                         username={feedback.username}
                         resume={feedback.resume}
-                        content={feedback.content}
+                        content={feedback?.content}
                     />
                 </div>
             ))}
