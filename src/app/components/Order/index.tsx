@@ -12,21 +12,18 @@ export function Order() {
                 <div className="flex items-center gap-2">
                     <Countdown />
                     <div className="bg-brand__gray-100 px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-1000 rounded-md uppercase text-[.8125rem]">
-                        R$400 OFF
-                    </div>
-                    <div className="bg-brand__gray-100 px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-brand__gray-1000 rounded-md uppercase text-[.8125rem]">
-                        🎁 PNAC
+                        R$200 OFF
                     </div>
                 </div>
                 <div className="flex flex-col">
                     <span className="uppercase text-[.9375rem] line-through font-bold text-brand__gray-600">
-                        De R$2.100,90
+                        De R$1600 à vista
                     </span>
                     <span className="uppercase text-[1.5625rem] leading-none font-bold text-brand__gray-100">
-                        12x R$120,48
+                        12x de 140,56
                     </span>
                     <span className="uppercase text-[.9375rem] font-bold text-brand__gray-600">
-                        ou R$1200,00 à vista
+                        Ou R$1400 à vista
                     </span>
                 </div>
 

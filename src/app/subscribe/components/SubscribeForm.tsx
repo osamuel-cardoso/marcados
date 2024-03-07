@@ -41,7 +41,7 @@ export function Subscribe() {
 
             if (status === 200) {
                 reset()
-                replace('https://pay.kiwify.com.br/KXJzTMT')
+                replace('https://pay.kiwify.com.br/srYvBYP')
             }
         } catch (error) {
             console.log(error)

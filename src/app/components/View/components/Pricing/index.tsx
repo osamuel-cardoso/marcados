@@ -3,8 +3,6 @@ import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
 
-import pnacImg from '@/app/images/pnac__thumbnail.png'
-import Image from 'next/image'
 import { Countdown } from './Countdown'
 import { Feature } from './Feature'
 import { Offer } from './Offer'
@@ -61,21 +59,18 @@ export function Pricing() {
                                 <div className="flex items-center gap-3">
                                     <Countdown />
                                     <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem] text-brand__gray-100 rounded-md uppercase">
-                                        R$400 OFF
-                                    </div>
-                                    <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem] text-brand__gray-100 rounded-md uppercase">
-                                        🎁 PNAC
+                                        R$200 OFF
                                     </div>
                                 </div>
                                 <div>
                                     <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
-                                        De R$2.100,90
+                                        De R$1.600,90
                                     </span>
                                     <h3 className="text-[2.25rem] md:text-[4rem]">
-                                        12x R$120,48
+                                        12X DE 140,56
                                     </h3>
-                                    <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
-                                        ou R$1200,00 à vista
+                                    <span className="uppercase text-[.9375rem] md:text-[1.1875rem] font-bold text-brand__gray-600">
+                                        ou R$1400,00 à vista
                                     </span>
                                 </div>
                                 <div className="flex flex-col gap-6">
@@ -100,7 +95,7 @@ export function Pricing() {
                                 </Button>
                             </div>
 
-                            <a
+                            {/* <a
                                 href="https://www.marcados.me/camp-pnac"
                                 target="_blank"
                                 className="flex flex-col gap-6 p-3 bg-brand__gray-200 rounded-xl"
@@ -126,7 +121,7 @@ export function Pricing() {
                                         trabalho.
                                     </span>
                                 </p>
-                            </a>
+                            </a> */}
                         </div>
 
                         <div className="w-full md:max-w-[41.67%] flex flex-col gap-4">
