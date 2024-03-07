@@ -6,6 +6,7 @@ import douglas from '@/app/images/douglas.png'
 import gabriel from '@/app/images/gabriel.png'
 import hunting from '@/app/images/hunting-words.jpg'
 import kaliton from '@/app/images/kaliton.png'
+import lara from '@/app/images/lara-mello.jpg'
 import leon from '@/app/images/leondiasg.jpg'
 import louise from '@/app/images/louise-e-pedro.png'
 import malu from '@/app/images/malu-fiusa.jpg'
@@ -227,6 +228,13 @@ const feedbacks = [
         content: `Desde que entrei, consegui aumentar em 40% o meu faturamento. Ainda não estou onde gostaria, mas tenho a base pra chegar lá.
         Fora isso, sou muito ajudado por ter também profissionais externos, com outras visões, e pela troca que ocorre na comunidade.
         Não me vejo mais fora daqui.`,
+    },
+    {
+        name: 'lara Mello',
+        username: '@laramello.co',
+        profile: lara,
+        resume: 'Durante minha jornada dentro do marcados, passei a me posicionar melhor desde a primeira interação com o cliente.',
+        content: `Consegui filtrar meus clientes e como consequência dos resultados obtidos com os clientes através da minha abordagem, passei a fechar mais projetos. Hoje a minha taxa de conversão é de 90% unindo prospecção e posicionamento.`,
     },
 ]
 
