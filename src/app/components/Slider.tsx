@@ -1,57 +1,81 @@
 'use client'
 import 'keen-slider/keen-slider.min.css'
-import { KeenSliderPlugin, useKeenSlider } from 'keen-slider/react'
-import { Card } from './Card'
+import { useKeenSlider } from 'keen-slider/react'
 
 import douglas from '@/app/images/douglas.png'
 import gabriel from '@/app/images/gabriel.png'
+import hunting from '@/app/images/hunting-words.jpg'
 import kaliton from '@/app/images/kaliton.png'
+import leon from '@/app/images/leondiasg.jpg'
 import louise from '@/app/images/louise-e-pedro.png'
+import malu from '@/app/images/malu-fiusa.jpg'
 import paula from '@/app/images/paula.png'
 import paulo from '@/app/images/paulo.png'
-import rocio from '@/app/images/rocio-e-wagner.png'
-import vic from '@/app/images/vic.png'
-import malu from '@/app/images/malu-fiusa.jpg'
-import gava from '@/app/images/thiago-gava.jpg'
 import rbr from '@/app/images/rbr-design.jpg'
+import rocio from '@/app/images/rocio-e-wagner.png'
+import gava from '@/app/images/thiago-gava.jpg'
+import vic from '@/app/images/vic.png'
 import verarto from '@/app/images/victor-verardo.jpg'
-import hunting from '@/app/images/hunting-words.jpg'
-import leon from '@/app/images/leondiasg.jpg'
+import { KeenSliderPlugin } from 'keen-slider'
+import { Card } from './Card'
 
 const feedbacks = [
     {
-        name: 'Thiago Gava',
-        username: '@THIIAGOGAVA',
+        name: 'PAULO NOGAROL',
+        username: '@paulonogarol',
         profile: paulo,
-        resume: 'Agora seguinte, um injeção de ânimo pra quem ainda está estruturando seus processos ou começando.',
-        content: `Marcados, queria compartilhar aqui uma experiência que me marcou. Segura que vem textão, pega seu café. Na verdade, acredito que a @alennattavares já deve estar na terceira dose 😄
+        resume: 'Fechei meu primeiro grande projeto de estratégia. Um contrato de R$18K. Somente de estratégia, sem nenhuma peça gráfica. Só estratégia. Ah, e sem proposta. Fechado na reunião de diagnóstico, aula 18 rs.',
+        content: `Marcados, queria compartilhar aqui uma experiência que me marcou.
+
+        Segura que vem textão, pega seu café. Na verdade, acredito que a @alennattavares já deve estar na terceira dose 😄
+        
         Um dos piores momentos que um empresário pode passar é a escassez financeira em seu negócio. E vivi estes momentos por vários meses desde 2022.
+        
         Pensei em desistir. Pensei em ir pro mercado.
+        
         Essa escassez pode deixar a gente cego, tomar as decisões erradas, e mexe muito com nosso emocional.
+        
         Cheguei a pensar em largar esse lance de estratégia de lado. Cheguei a pensar em fazer design por design, visual por visual, que "é o que o cliente quer e que me ajuda a dar vazão no escritório".
+        
         Mas, como nosso amado Lona compartilhou uma vez: algumas coisas a gente escolhe, outras somos escolhidos.
+        
         E a estratégia me escolheu. Eu simplesmente não acredito que uma marca sem estratégia funcione. E eu tenho muita dificuldade em vender algo que não acredito.
+        
         (Acho que me enrolei no enredo do texto, mas se você leu até aqui, talvez continue rs)
+        
         Ao olhar para os meus 25 anos de trabalho, sendo 5 deles como designer, em todo este tempo eu fui estrategista. Sempre olhei o todo e como as peças se aglutinam para gerar resultados.
+        
         E hoje trago isso para o design.
+        
         Ao buscar e entender os motivos de escassez financeira do meu estúdio eu vi com clareza que cometi dois erros cruciais:
+        
         Deixei de vender. Agora eu percebo que a gente tem vender todo dia! Eu cometi o erro de deixar de vender quando estava com a conta cheia. Mas, percebo que precisamos vender justamente também enquanto temos clientes pra atender.
         Fiquei pensando demais. Tentei reestruturar o que já estava funcionando. O estúdio estava indo bem com a nossa abordagem estratégica que tínhamos desde o início. Mas inventei de "simplificar". E me perdi. Me desloquei de minha essência. E isso me deixou frágil.
         E tomei as seguintes atitudes, no fim de 2022:
+        
         Passei a vender todo dia. Estou com anúncios pagos. Estou esquentando minha base de clientes constantemente. Participo de grupos de empresários. Converso sobre negócios com outros amigos designers. E tenho outras ações.
         Bati no peito sem medo e assumi que a Itiá é um estúdio de branding e design. E fazemos tudo com estratégia.
         Consegui separar o workshop de estratégia como um entregável muito mais caro que um projeto de identidade visual.
         E então, desde o início do ano, as coisas voltaram a acontecer, voltamos a fechar projetos relevantes.
+        
         E compartilho, no sentido principal de servir como incentivo para os que talvez estejam em momentos frágeis como os que eu me encontrava, o seguinte:
+        
         a. Trabalhei muito, e ainda trabalho, vivo com olheiras e cansado rs, mas percebo que o trabalho devolve!
+        
         b. Fechei meu primeiro grande projeto de estratégia. Um contrato de R$18K. Somente de estratégia, sem nenhuma peça gráfica. Só estratégia. Ah, e sem proposta. Fechado na reunião de diagnóstico, vide aula 18 rs.
+        
         Desculpem o textão. Mas, estive mais ausente que o comum da comunidade. E gostaria de devolver um pouquinho do que aconteceu aqui nos últimos meses.
+        
         Agradeço primeiramente a Deus pelos bons ventos que têm soprado por aqui. E agradeço a cada um que divide um pouco de sua vivência na comunidade. Obrigado ao @AndreLona por nutri-la de forma tão poderosa.
+        
+        —
+        
+        O Paulão contou essa história na íntegra também no instagram.
         `,
     },
     {
         name: 'DOUGLAS ANTÔNIO',
-        username: '@DOUGLASANTONIO.S',
+        username: '@douglasantonio.s',
         profile: douglas,
         resume: 'A cliente ficou absurdamente surpresa, pois fui além da proposta, que era só entregar um logo. Não foi um projeto de mais de 10k, mas sei que ele puxara muitos outros.',
         content: `Estou passando aqui para te agradecer. Acabei de sair de uma apresentação de um projeto de marca e a cliente amou. Muito, se não tudo, do que apliquei nesse projeto foi aprendido no Marcados.
@@ -63,7 +87,7 @@ const feedbacks = [
     },
     {
         name: 'GABRIEL GONÇALVES',
-        username: '@GABRIELVAGON',
+        username: '@gabrielvagon',
         profile: gabriel,
         resume: 'Meu primeiro cliente após entrar no mercado já me permitiu sair de projetos de 2k para um projeto de 8k',
         content: `Lona, cara tu não tem noção do que aconteceu, sabe a reunião que eu tinha para hoje, a reunião durou 2 horas e ao final da reunião o cliente me disse que durante a nossa conversa ele mudou completamente a percepção que ele tinha sobre o trabalho de um designer e como eu poderia ajudar ele e o negócio dele, na reunião mesmo eu já passei o valor e ele aceitou na hora, mais apertadas e pix na conta, cara sem mentira, meu primeiro cliente após entrar no marcados já me permitiu sair de projetos de 2k para um projeto de 8k, tu tem noção disso? Eu só tenho a agradecer por tudo, sério, obrigado!
@@ -72,7 +96,7 @@ const feedbacks = [
     },
     {
         name: 'LOUISE E PEDRO',
-        username: '@DESIGNSTUDIO.BOLD',
+        username: '@designbold.studio',
         profile: louise,
         resume: 'Saímos de projetos rasos de identidade visual de R$ 2.500 para projetos mais profundos e significativos, cobrando até R$ 10.500 oito meses após a decisão de nos especializarmos. Isso é quatro vezes mais do que cobrávamos antes. No ano passado, faturávamos uma média de R$ 6.000 por mês; hoje, ultrapassamos os R$ 20.000.',
         content: `Meu marido e eu trabalhamos juntos há pouco mais de cinco anos. Por exatos quatro anos e sete meses, fomos generalistas; pegávamos o que aparecesse: identidade visual, posts para Instagram, papelaria, flyers, outdoors — qualquer coisa para qualquer um. O resultado disso, como vocês podem imaginar, era catastrófico. Vivíamos sob estresse constante e lidávamos todos os dias com clientes ruins e mal-educados.
@@ -87,7 +111,7 @@ const feedbacks = [
     },
     {
         name: 'VIC COSTA',
-        username: '@AVICCOSTA',
+        username: '@aviccosta',
         profile: vic,
         resume: 'Depois disso a procura por projeto se tornou constante, sempre que produzo conteúdo ganho seguidores do nicho de forma orgânica e rolam pedidos de orçamento',
         content: `Ano passado nesse mesmo período eu passava por um pós-burnout porque pegava todo tipo de trabalho gráfico pra fechar as contas. Depois de meses de recuperação eu lembro de estar estudando lettering pra subir meu preço (não riam) e o anúncio do Lona aparecer pra mim.
@@ -97,7 +121,7 @@ const feedbacks = [
     },
     {
         name: 'KALITON LEVI',
-        username: '@KALITONLEVI',
+        username: '@kalitonlevi',
         profile: kaliton,
         resume: 'Hoje me chamaram novamente para uma reunião, apenas para dizer: PROPOSTA ACEITA. Iniciamos em setembro com as entrevistas e workshops. ✨F*CKING R$ 28.000,00.✨ (o mais alto que eu já fechei em um único projeto de design foi 2.500,00.)',
         content: `Aguardei com expectativa as as lives do lançamento, pois já vinha há alguns dias consumindo o conteúdo do André no youtube e instagram. Assisti todos os dias, e na quarta-feira (05/07) (após a segunda live) aproveitei para assistir a aula 18 e o primeiro episódio do Branding 101. A minha cabeça explodiu às 1h35 da madrugada. Depois desse "coice de cavalo no cérebro" chamado aula 18, eu simplesmente não conseguia dormir. Deitei e fiquei mirabolando.
@@ -112,7 +136,7 @@ const feedbacks = [
     },
     {
         name: 'ROCÍO & WAGNER',
-        username: '@GREENTEA.THINKING',
+        username: '@greentea.thinking',
         profile: rocio,
         resume: 'Fechamos 3 projetos de Estratégia de Marca para infocreators nômades. O posicionamento tá funcionando, o mercado tá respondendo, parcerias estão sendo firmadas com outros colegas. A coisa tá acontecendo! Temos um trabalho sendo construído com intencionalidade e direcionamento.',
 
@@ -134,7 +158,7 @@ const feedbacks = [
     },
     {
         name: 'Paula Araújo',
-        username: '@PAULAARAUJO.KW',
+        username: '@paulaaraujo.kw',
         profile: paula,
         resume: 'Atingi pela primeira vez 3x o meu faturamento médio em um mês...',
         content: `Na reunião onde me apresentei você disse que eu parecia o tipo de pessoa que poderia dobrar meu preço e isso me deu coragem.
@@ -143,7 +167,7 @@ const feedbacks = [
     },
     {
         name: 'Thiago Gava',
-        username: '@THIIAGOGAVA',
+        username: '@thiiagovaga',
         profile: gava,
         resume: 'Agora seguinte, uma injeção de ânimo pra quem ainda está estruturando seus processos ou começando...',
         content: `No início do mês passada, eu compartilhei aqui que tinha sido vítima do layoff lá na empresa. Desde Janeiro de 2021 eu vinha ensaiando uma transição de carreira, que foi quando conheci o Marcados (entrei no primeiro lançamento). Pois bem, ainda tava bem perdido, aprendendo diversas técnicas e ferramentas. Bom, acabei deixando algumas coisas de lado, como ter meu estúdio/consultoria não era minha fonte de renda principal, sempre empurrava com a barriga.
@@ -166,6 +190,15 @@ const feedbacks = [
         - Fechar trabalhos com valores de orçamento até 3 vezes maior (com maior entrega também)
         - Dificuldade na transição entre clientes antigos e novos, como entender o cenário de projetos de branding completo vs apenas identidade visual
         - Expandir rede de contato de profissionais`,
+    },
+    {
+        name: 'Raquel Braz',
+        username: '@rbrdesign',
+        profile: rbr,
+        resume: `Quando entrei para a comunidade, estava passando por uma fase de insegurança em relação à aplicabilidade do branding nos meus projetos. Apesar de participar de diversos cursos e palestras sobre o assunto, ainda me sentia frustrada e desorientada. No entanto, ao chegar na comunidade, fui recebida com tanto acolhimento e disposição para ajudar que me senti em casa. Devorei o conteúdo rapidamente e finalmente comecei a compreender os verdadeiros objetivos da estratégia de marca e como ela poderia impactar positivamente nos projetos dos meus clientes.
+        O André foi fundamental nesse processo, pois me ajudou a destravar um bloqueio mental que eu tinha em relação ao meu posicionamento profissional, quase como mágica ele usou algumas palavras que me paralisaram por dias seguidos, mas eu abracei elas e acreditei. Graças a ele, percebi que não precisava esperar dominar tudo para começar a aplicar e cobrar pelos meus serviços. Mesmo atuando como designer há 24 anos, só recentemente comecei a me aventurar na área de naming e identidade visual, o que me deixava insegura. No entanto, com o incentivo do André e de colegas como a Éve e o Max, comecei a me posicionar como estrategista e a aplicar gradualmente o que aprendia com meus clientes. A cada dia, me sinto mais segura e confiante, evoluindo constantemente na entrega dos meus projetos e valorizando meu trabalho.
+        Assumir meus anos de experiência como designer, enxergando-me também como profissional estratégica me trouxe uma nova perspectiva e orgulho do meu trabalho. Sinto que agora estou no caminho certo e mais preparada para enfrentar os desafios da minha carreira.  
+        A comunidade é como uma família para mim e o André é um paizão, um irmão mais velho (na estratégia e conhecimento), que fica ao nosso lado nos ajuda a ir além. Eu gostaria de ver mais momentos de “destravamento” como esse que tive. Gosto muito das mentorias em grupo e tenho certeza que os direcionamentos de conteúdo mais específicos para cada fase em que estivermos, vai ajudar cada membro a evoluir em seu próprio ritmo. Acredito que isso trará ainda mais união e acolhimento à comunidade, fortalecendo o grupo e incentivando o crescimento e permanência de todos.,`,
     },
     {
         name: 'Malu Fiusa',
@@ -192,7 +225,7 @@ const feedbacks = [
         resume: 'O Marcados me trouxe estrutura e método pra que eu tenha mais confiança e certeza de que posso atuar de forma positiva nos negócios dos meus clientes. Agora realmente sei o que estou fazendo.',
         content: `Desde que entrei, consegui aumentar em 40% o meu faturamento. Ainda não estou onde gostaria, mas tenho a base pra chegar lá.
         Fora isso, sou muito ajudado por ter também profissionais externos, com outras visões, e pela troca que ocorre na comunidade.
-        Não me vejo mais fora daqui.,`,
+        Não me vejo mais fora daqui.`,
     },
 ]
 

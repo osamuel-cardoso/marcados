@@ -41,9 +41,13 @@ export function Card({
                         </div>
                         <div className="flex flex-col gap-1">
                             <h4 className="uppercase">{name}</h4>
-                            <p className="text-brand__gray-600 text-[.8125rem]">
+                            <a
+                                className="text-brand__gray-600 text-[.8125rem] uppercase"
+                                href={`https://www.instagram.com/${username.replace('@', '')}/`}
+                                target="_blank"
+                            >
                                 {username}
-                            </p>
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-col gap-7 w-full">
