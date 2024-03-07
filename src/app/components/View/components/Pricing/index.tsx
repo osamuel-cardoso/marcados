@@ -37,7 +37,6 @@ const features: FeaturesType = [
     },
     { title: 'Clube do Livro' },
     { title: 'Templates', label: 'Novo!' },
-    { title: 'PNAC', label: 'Bônus!' },
 ]
 
 export function Pricing() {
