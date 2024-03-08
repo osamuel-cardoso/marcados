@@ -6,7 +6,7 @@ import { Question } from './Question'
 const frequentlyQuestions = [
     {
         title: 'Quanto tempo de garantia terei?',
-        content: 'Você terá 7 dias de garantia pela Hotmart.',
+        content: 'Você terá 7 dias de garantia pela Kiwify.',
     },
     {
         title: 'Quanto tempo de acesso terei?',

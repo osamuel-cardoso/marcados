@@ -82,8 +82,8 @@ export function Pricing() {
                                         subtitle="Utilizamos a Kiwify como gateway de pagamento."
                                     />
                                     <Feature
-                                        title="Acesso imediato"
-                                        subtitle="Tenha acesso à comunidade imediatamente."
+                                        title="Acesso em até 2 horas"
+                                        subtitle="Tenha acesso à comunidade em até 2 horas após a data da compra."
                                     />
                                 </div>
                                 <Button
