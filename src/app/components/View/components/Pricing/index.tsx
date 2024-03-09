@@ -57,26 +57,26 @@ export function Pricing() {
                                 {' '}
                                 <div className="flex items-center gap-3">
                                     <Countdown />
-                                    <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem] text-brand__gray-100 rounded-md uppercase">
+                                    {/* <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem] text-brand__gray-100 rounded-md uppercase">
                                         R$200 OFF
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div>
                                     <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
-                                        De R$1.600,90
+                                        De R$2.100,90
                                     </span>
-                                    <h3 className="text-[2.25rem] md:text-[4rem]">
-                                        12X DE 140,56
+                                    <h3 className="text-[2.25rem] md:text-[3.65rem]">
+                                        12X de R$ 160,64
                                     </h3>
                                     <span className="uppercase text-[.9375rem] md:text-[1.1875rem] font-bold text-brand__gray-600">
-                                        ou R$1400,00 à vista
+                                        ou R$1600,00 à vista
                                     </span>
                                 </div>
                                 <div className="flex flex-col gap-6">
-                                    {/* <Feature
-                                    title="Parcele no boleto em 24x"
-                                    subtitle="Sujeito à análise."
-                                /> */}
+                                    <Feature
+                                        title="Parcele no boleto em 24x"
+                                        subtitle="Sujeito à análise."
+                                    />
                                     <Feature
                                         title="Compra 100% segura"
                                         subtitle="Utilizamos a Kiwify como gateway de pagamento."

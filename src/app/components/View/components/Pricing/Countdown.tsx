@@ -14,7 +14,7 @@ export function Countdown() {
 
     useEffect(() => {
         const timerID = setInterval(() => {
-            setTime(getDifferenceBetweenDate('2024/03/08 23:59'))
+            setTime(getDifferenceBetweenDate('2024/03/10 23:59'))
         }, 1000)
 
         return () => {

@@ -1,7 +1,6 @@
 'use client'
 
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
@@ -14,7 +13,7 @@ const leadSchema = z.object({
 
 type LeadSchema = z.infer<typeof leadSchema>
 
-export function Subscribe() {
+export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
     const {
         register,
         handleSubmit,
@@ -23,8 +22,6 @@ export function Subscribe() {
     } = useForm<LeadSchema>({
         resolver: zodResolver(leadSchema),
     })
-
-    const { replace } = useRouter()
 
     async function handleRegisterLead(data: LeadSchema) {
         try {
@@ -41,7 +38,7 @@ export function Subscribe() {
 
             if (status === 200) {
                 reset()
-                replace('https://pay.kiwify.com.br/srYvBYP')
+                handleSetMount()
             }
         } catch (error) {
             console.log(error)
