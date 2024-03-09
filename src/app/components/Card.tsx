@@ -66,7 +66,7 @@ export function Card({
                 </div>
             </div>
             {mount && (
-                <CreateModalPortal portalId="portal">
+                <CreateModalPortal>
                     <Modal
                         name={name}
                         profile={profile}
