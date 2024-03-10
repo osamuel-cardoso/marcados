@@ -87,9 +87,9 @@ export function Delivery() {
                                 </div>
                                 <div className="flex flex-col gap-[1.125rem]">
                                     <div className="flex flex-col">
-                                        <span className="uppercase text-[.9375rem] line-through font-bold text-brand__gray-600">
+                                        {/* <span className="uppercase text-[.9375rem] line-through font-bold text-brand__gray-600">
                                             De R$2.100,90
-                                        </span>
+                                        </span> */}
                                         <span className="uppercase text-[1.5625rem] leading-none font-bold text-brand__gray-1000">
                                             12X de R$ 160,64
                                         </span>

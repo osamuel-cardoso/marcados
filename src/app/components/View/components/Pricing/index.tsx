@@ -62,9 +62,9 @@ export function Pricing() {
                                     </div> */}
                                 </div>
                                 <div>
-                                    <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
+                                    {/* <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
                                         De R$2.100,90
-                                    </span>
+                                    </span> */}
                                     <h3 className="text-[2.25rem] md:text-[3.65rem]">
                                         12X de R$ 160,64
                                     </h3>
