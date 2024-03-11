@@ -24,25 +24,22 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
     })
 
     async function handleRegisterLead(data: LeadSchema) {
-        try {
-            console.log(data)
-
-            const { status } = await fetch('/api/mail', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-
-                body: JSON.stringify(data),
-            })
-
-            if (status === 200) {
-                reset()
-                handleSetMount()
-            }
-        } catch (error) {
-            console.log(error)
-        }
+        // try {
+        //     console.log(data)
+        //     const { status } = await fetch('/api/mail', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //         },
+        //         body: JSON.stringify(data),
+        //     })
+        //     if (status === 200) {
+        //         reset()
+        //         handleSetMount()
+        //     }
+        // } catch (error) {
+        //     console.log(error)
+        // }
     }
 
     return (

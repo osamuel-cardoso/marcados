@@ -88,7 +88,7 @@ export function Pricing() {
                                 </div>
                                 <Button
                                     variant={'yellow'}
-                                    href={'/subscribe'}
+                                    href={'/'}
                                 >
                                     Entre para o Marcados
                                 </Button>
