@@ -38,7 +38,7 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
             })
             if (status === 200) {
                 reset()
-                replace('/success')
+                replace('/sucesso')
             }
         } catch (error) {
             console.log(error)
