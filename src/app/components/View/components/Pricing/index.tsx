@@ -3,7 +3,6 @@ import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
 
-import { Countdown } from './Countdown'
 import { Feature } from './Feature'
 import { Offer } from './Offer'
 
@@ -54,43 +53,42 @@ export function Pricing() {
                     <div className="flex flex-col-reverse gap-11 md:flex-row md:items-start md:justify-between">
                         <div className="flex flex-col gap-8 md:sticky md:top-12 w-full md:max-w-[37%]">
                             <div className="flex flex-col gap-8">
-                                {' '}
-                                <div className="flex items-center gap-3">
+                                {/* <div className="flex items-center gap-3">
                                     <Countdown />
-                                    {/* <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem] text-brand__gray-100 rounded-md uppercase">
+                                    <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem] text-brand__gray-100 rounded-md uppercase">
                                         R$200 OFF
-                                    </div> */}
-                                </div>
+                                    </div>
+                                </div> */}
                                 <div>
                                     {/* <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
                                         De R$2.100,90
                                     </span> */}
-                                    <h3 className="text-[2.25rem] md:text-[3.65rem]">
+                                    {/* <h3 className="text-[2.25rem] md:text-[3.65rem]">
                                         12X de R$ 160,64
                                     </h3>
                                     <span className="uppercase text-[.9375rem] md:text-[1.1875rem] font-bold text-brand__gray-600">
                                         ou R$1600,00 à vista
-                                    </span>
+                                    </span> */}
                                 </div>
                                 <div className="flex flex-col gap-6">
                                     <Feature
-                                        title="Parcele no boleto em 24x"
-                                        subtitle="Sujeito à análise."
+                                        title="Seja avisado com antecedência."
+                                        subtitle="Tenha prioridade no aviso da próxima turma"
                                     />
                                     <Feature
-                                        title="Compra 100% segura"
-                                        subtitle="Utilizamos a Kiwify como gateway de pagamento."
+                                        title="Não perca as condições especiais"
+                                        subtitle="Em toda turma, liberamos condições espciais"
                                     />
                                     <Feature
-                                        title="Acesso em até 2 horas"
-                                        subtitle="Tenha acesso à comunidade em até 2 horas após a data da compra."
+                                        title="Tenha acesso a materiais exclusivos"
+                                        subtitle="Ao participar de cada lançamento, receba acesso a aulas e materiais exclusivos do Grupo Marcados"
                                     />
                                 </div>
                                 <Button
-                                    variant={'yellow'}
-                                    href={'/'}
+                                    variant={'blue'}
+                                    href={'/subscribe'}
                                 >
-                                    Entre para o Marcados
+                                    Entre para a lista de espera
                                 </Button>
                             </div>
 

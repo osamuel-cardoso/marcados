@@ -1,6 +1,7 @@
 'use client'
 
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
@@ -14,6 +15,8 @@ const leadSchema = z.object({
 type LeadSchema = z.infer<typeof leadSchema>
 
 export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
+    const { replace } = useRouter()
+
     const {
         register,
         handleSubmit,
@@ -24,22 +27,22 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
     })
 
     async function handleRegisterLead(data: LeadSchema) {
-        // try {
-        //     console.log(data)
-        //     const { status } = await fetch('/api/mail', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-        //         body: JSON.stringify(data),
-        //     })
-        //     if (status === 200) {
-        //         reset()
-        //         handleSetMount()
-        //     }
-        // } catch (error) {
-        //     console.log(error)
-        // }
+        try {
+            console.log(data)
+            const { status } = await fetch('/api/mail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+            if (status === 200) {
+                reset()
+                replace('/success')
+            }
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     return (
