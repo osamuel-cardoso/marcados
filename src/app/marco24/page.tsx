@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation'
 import { Footer } from '../components/Footer'
 import { Carousel } from '../components/View/components/Carousel'
 import { Classes } from '../components/View/components/Classes'
@@ -11,6 +12,8 @@ import { Pricing } from '../components/View/components/Pricing'
 import { Questions } from '../components/View/components/Questions'
 
 export default function Page() {
+    redirect('/lista-de-espera')
+
     return (
         <>
             <noscript>
