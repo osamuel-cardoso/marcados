@@ -76,12 +76,8 @@ export function Pricing() {
                                         subtitle="Tenha prioridade no aviso da próxima turma"
                                     />
                                     <Feature
-                                        title="Não perca as condições especiais"
+                                        title="Faça parte da lista de pré-venda."
                                         subtitle="Em toda turma, liberamos condições espciais"
-                                    />
-                                    <Feature
-                                        title="Tenha acesso a materiais exclusivos"
-                                        subtitle="Ao participar de cada lançamento, receba acesso a aulas e materiais exclusivos do Grupo Marcados"
                                     />
                                 </div>
                                 <Button

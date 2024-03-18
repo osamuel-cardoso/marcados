@@ -26,15 +26,15 @@ const lonaPhrases = [
 ]
 
 const subscribeDate = [
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
-    'inscrições até 10/03/2024',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
+    'Próxima abertura em junho',
 ]
 
 export function Header() {
