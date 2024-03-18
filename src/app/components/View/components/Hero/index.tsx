@@ -29,7 +29,9 @@ export function Hero() {
                     <div className="flex flex-col gap-4">
                         <Video
                             controls
-                            url={'https://youtu.be/C8rVPQ6P-xw'}
+                            url={
+                                'https://player.vimeo.com/video/881866338?h=5113a7fdfc'
+                            }
                         />
 
                         <FeatureCards />

@@ -30,7 +30,9 @@ export function OverviewVideo() {
                     }
                     playsinline
                     height={'100%'}
-                    url={'https://youtu.be/lB5nJjLugzE'}
+                    url={
+                        'https://player.vimeo.com/video/920071765?h=fd38ccaf73'
+                    }
                 />
             </div>
         )
