@@ -10,17 +10,17 @@ import { Temp } from './Temp'
 const lonaPhrases = [
     'Estratégia, branding e o business do design c/ andré lona',
     'Pago para pensar',
-    'f*da-se o seu portifólio',
+    'f*da-se o seu portfólio',
     'Aprenda a diagnosticar antes de prescrever',
     'Seu cliente não se importa com o que você sabe.',
     'Estratégia, branding e o business do design c/ andré lona',
     'Pago para pensar',
-    'f*da-se o seu portifólio',
+    'f*da-se o seu portfólio',
     'Aprenda a diagnosticar antes de prescrever',
     'Seu cliente não se importa com o que você sabe.',
     'Estratégia, branding e o business do design c/ andré lona',
     'Pago para pensar',
-    'f*da-se o seu portifólio',
+    'f*da-se o seu portfólio',
     'Aprenda a diagnosticar antes de prescrever',
     'Seu cliente não se importa com o que você sabe.',
 ]
@@ -88,7 +88,7 @@ export function Header() {
                     </div>
                 </Marquee>
             </div>
-            <div className="flex gap-4  py-2 bg-brand__gray-1000 text-brand__gray-100">
+            <div className="flex gap-4 py-2 bg-brand__gray-1000 text-brand__gray-100">
                 <Marquee
                     loop={0}
                     speed={12}
