@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html{
-  @apply font-text text-brand__gray-1000 bg-brand__gray-100;
+  @apply font-text text-brand__gray-base;
   -webkit-font-smoothing: antialiased;
 }
 

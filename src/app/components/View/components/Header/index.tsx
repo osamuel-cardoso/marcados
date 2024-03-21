@@ -76,7 +76,7 @@ export function Header() {
                 </Container>
             </header>
 
-            <div className="flex gap-4  py-2 bg-brand__gray-100">
+            <div className="flex gap-4  py-2 bg-brand__gray-100 text-brand__gray-1000">
                 <Marquee
                     loop={0}
                     speed={12}
