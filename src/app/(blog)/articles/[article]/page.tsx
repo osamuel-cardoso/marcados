@@ -70,7 +70,7 @@ export default async function Page({
 
     return (
         <>
-            <div className="py-28">
+            <div className="py-20 lg:py-28">
                 <div className="w-full max-w-[41.5rem] m-auto px-4">
                     <div className="flex flex-col gap-9">
                         <div className="flex flex-col gap-10 pb-6 border-b border-brand__gray-900">

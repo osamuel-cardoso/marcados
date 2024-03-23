@@ -19,7 +19,7 @@ export default async function Page() {
     return (
         <>
             <main>
-                <section className="py-28">
+                <section className="py-20 lg:py-28">
                     <Container>
                         <div className="flex flex-col gap-16">
                             <PostContainer posts={blogPosts} />
