@@ -1,9 +1,8 @@
-import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 
-export const neueHaasDisplay = localFont({
+const neueHaasDisplay = localFont({
     src: [
         {
             path: '../fonts/Neue Haas Grotesk Display Pro 55 Roman.ttf',
@@ -50,7 +49,7 @@ export const neueHaasDisplay = localFont({
     variable: '--font-display',
 })
 
-export const neueHaasText = localFont({
+const neueHaasText = localFont({
     src: [
         {
             path: '../fonts/Neue Haas Grotesk Text Pro 55 Roman.ttf',
