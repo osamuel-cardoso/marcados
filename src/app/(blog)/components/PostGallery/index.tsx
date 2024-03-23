@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export function BlogPost({
+export function PostGrid({
     src,
     content,
     date,
