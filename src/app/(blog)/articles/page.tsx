@@ -13,7 +13,7 @@ async function getPosts() {
 }
 
 export default async function Page() {
-    const { data, loading, error } = await getPosts()
+    const { data, error } = await getPosts()
     const { blogPosts }: GetPostsData = data
 
     return (
