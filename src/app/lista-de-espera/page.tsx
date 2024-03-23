@@ -1,4 +1,5 @@
 import { Footer } from '../components/Footer'
+import { Marquee } from '../components/Marquee'
 import { Carousel } from '../components/View/components/Carousel'
 import { Classes } from '../components/View/components/Classes'
 import { Delivery } from '../components/View/components/Delivery'
@@ -24,7 +25,8 @@ export default function Waitlist() {
                     }}
                 ></iframe>
             </noscript>
-            <Header />
+            <Header anchors />
+            <Marquee />
             <Hero />
             <Inside />
             <Classes />
