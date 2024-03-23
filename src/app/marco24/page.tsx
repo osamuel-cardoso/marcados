@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation'
 import { Footer } from '../components/Footer'
+import { Marquee } from '../components/Marquee'
 import { Carousel } from '../components/View/components/Carousel'
 import { Classes } from '../components/View/components/Classes'
 import { Delivery } from '../components/View/components/Delivery'
@@ -28,6 +29,7 @@ export default function Page() {
                 ></iframe>
             </noscript>
             <Header />
+            <Marquee />
             <Hero />
             <Inside />
             <Classes />

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
 
-const neueHaasDisplay = localFont({
+export const neueHaasDisplay = localFont({
     src: [
         {
             path: '../fonts/Neue Haas Grotesk Display Pro 55 Roman.ttf',
@@ -50,7 +50,7 @@ const neueHaasDisplay = localFont({
     variable: '--font-display',
 })
 
-const neueHaasText = localFont({
+export const neueHaasText = localFont({
     src: [
         {
             path: '../fonts/Neue Haas Grotesk Text Pro 55 Roman.ttf',
