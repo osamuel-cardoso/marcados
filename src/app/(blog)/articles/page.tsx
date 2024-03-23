@@ -27,7 +27,7 @@ export default async function Page() {
                                     <h1 className="uppercase text-[1.3125rem] ">
                                         Artigos
                                     </h1>
-                                    <span className="align-top text-[.9375rem]">
+                                    <span className="align-top font-bold text-[.9375rem]">
                                         {String(blogPosts.length).padStart(
                                             2,
                                             '0'
