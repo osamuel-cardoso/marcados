@@ -92,7 +92,8 @@ export function Footer() {
                     </div>
                     <div className="w-full flex flex-col gap-2 md:gap-0 md:flex-row justify-between">
                         <span className="uppercase text-[.8125rem] text-brand__gray-600 font-medium">
-                            Todos os direitos reservados. 2024 Ⓜ️
+                            Todos os direitos reservados.{' '}
+                            {new Date().getFullYear()} Ⓜ️
                         </span>
                         <div className="flex gap-8">
                             <Link

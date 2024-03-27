@@ -58,19 +58,28 @@ export function Pricing() {
                                     <div className="bg-brand__system-yellow px-[.6875rem] py-[.4375rem] h-[100%] font-bold text-[.8125rem] text-brand__gray-100 rounded-md uppercase">
                                         R$200 OFF
                                     </div>
-                                </div> */}
-                                <div>
-                                    {/* <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
+                                </div> 
+                                
+                                   <span className="uppercase text-[.9375rem] md:text-[1.1875rem] line-through font-bold text-brand__gray-600">
                                         De R$2.100,90
-                                    </span> */}
-                                    {/* <h3 className="text-[2.25rem] md:text-[3.65rem]">
+                                    </span> 
+                                    <h3 className="text-[2.25rem] md:text-[3.65rem]">
                                         12X de R$ 160,64
                                     </h3>
                                     <span className="uppercase text-[.9375rem] md:text-[1.1875rem] font-bold text-brand__gray-600">
                                         ou R$1600,00 à vista
-                                    </span> */}
-                                </div>
+                                    </span> 
+                                </div> */}
                                 <div className="flex flex-col gap-6">
+                                    <Feature
+                                        title="Tenha acesso a materiais exclusivos."
+                                        subtitle="Receba acesso ao Hall do Marcados."
+                                    />
+                                    <Feature
+                                        title="Aguarde no Hall do Marcados enquanto espera a próxima turma"
+                                        subtitle="
+                                        Como membro da lista de espera, terá acesso no Notion a aulas selecionadas da plataforma do Grupo Marcados Ⓜ️."
+                                    />
                                     <Feature
                                         title="Seja avisado com antecedência."
                                         subtitle="Tenha prioridade no aviso da próxima turma"
