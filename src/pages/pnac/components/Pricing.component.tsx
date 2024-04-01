@@ -27,7 +27,7 @@ const features: FeaturesType = [
     },
 ]
 
-export function Pricing() {
+export default function Pricing() {
     return (
         <section className="py-20 md:py-28 bg-brand__gray-100">
             <Container>

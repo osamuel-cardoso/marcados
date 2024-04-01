@@ -17,7 +17,7 @@ import shot05 from '@/app/images/shot05.png'
 import shot06 from '@/app/images/shot01.png'
 import Image from 'next/image'
 
-export function Modules() {
+export default function Modules() {
     return (
         <section className="py-20 md:py-28 bg-brand__gray-100 overflow-hidden">
             <div className="flex flex-col gap-16">

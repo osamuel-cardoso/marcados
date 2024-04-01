@@ -1,7 +1,7 @@
 import alunos from '@/app/images/alunos.png'
 import Image from 'next/image'
 
-export function Testimonials() {
+export default function Testimonials() {
     return (
         <div className="flex flex-col justify-between w-full">
             <div className="flex gap-2 items-center">

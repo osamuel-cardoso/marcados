@@ -1,7 +1,7 @@
 import { Container } from '@/app/components/Container'
 import { Slider } from './Slider.component'
 
-export function Testimonial() {
+export default function Testimonial() {
     return (
         <section
             className="py-20 md:py-28 bg-brand__gray-100 overflow-hidden"

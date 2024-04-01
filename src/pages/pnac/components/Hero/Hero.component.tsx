@@ -2,9 +2,9 @@ import { Container } from '@/app/components/Container'
 import { Video } from '@/app/components/View/components/Video'
 import { MarcadosBrand } from '@/app/components/icons/MarcadosBrand'
 import Link from 'next/link'
-import { Testimonials } from './Testimonials.component'
+import Testimonials from './Testimonials.component'
 
-export function Hero() {
+export default function Hero() {
     return (
         <section className="bg-brand__gray-100 py-16 md:py-20">
             <Container>

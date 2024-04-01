@@ -1,9 +1,9 @@
 import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
-import { Faq } from './Faq.component'
+import Faq from './Faq.component'
 
-export function Questions() {
+export default function Questions() {
     return (
         <section className="bg-brand__gray-100 py-20 md:py-28">
             <div>

@@ -4,7 +4,7 @@ import { pnacQuestions } from '@/utils/feedbacks/pnac.questions'
 import { useState } from 'react'
 import { Question } from './Question.component'
 
-export function Faq() {
+export default function Faq() {
     const [activeAccordion, setActiveAccordion] = useState(0)
 
     const handleSetColapse = (index: number) => {
