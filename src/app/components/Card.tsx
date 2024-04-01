@@ -4,7 +4,7 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 import Image from 'next/image'
 import { useState } from 'react'
 import { CreateModalPortal } from './CreateModal'
-import { Modal } from './View/components/Feedbacks/Popup'
+import { Modal } from './views/View/components/Feedbacks/Popup'
 
 export function Card({
     profile,

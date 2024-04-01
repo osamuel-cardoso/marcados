@@ -1,10 +1,10 @@
 import { Footer } from '../components/Footer'
 import { Marquee } from '../components/Marquee'
-import { Classes } from '../components/View/components/Classes'
-import { Feedbacks } from '../components/View/components/Feedbacks'
-import { Header } from '../components/View/components/Header'
-import { Hero } from '../components/View/components/Hero'
-import { Pricing } from '../components/View/components/Pricing'
+import { Classes } from '../components/views/View/components/Classes'
+import { Feedbacks } from '../components/views/View/components/Feedbacks'
+import { Header } from '../components/views/View/components/Header'
+import { Hero } from '../components/views/View/components/Hero'
+import { Pricing } from '../components/views/View/components/Pricing'
 
 export default function Waitlist() {
     return (

@@ -1,6 +1,6 @@
 import { Footer } from '../components/Footer'
 import { Marquee } from '../components/Marquee'
-import { Header } from '../components/View/components/Header'
+import { Header } from '../components/views/View/components/Header'
 
 export default function RootLayout({
     children,
