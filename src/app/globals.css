@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 html{
-  @apply font-text text-brand__gray-base;
-  -webkit-font-smoothing: antialiased;
+  @apply font-text text-brand__gray-base antialiased h-full;
+}
+
+body {
+  @apply h-full
 }
 
 ::selection{

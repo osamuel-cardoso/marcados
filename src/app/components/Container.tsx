@@ -1,15 +1,14 @@
-import { ReactNode } from 'react'
+import { ComponentProps } from 'react'
+import { VariantProps, tv } from 'tailwind-variants'
 
-export function Container({
-    children,
-    className,
-}: {
-    children?: ReactNode
-    className?: string
-}) {
-    return (
-        <div className={`w-full max-w-[83rem] m-auto px-4 ${className}`}>
-            {children}
-        </div>
-    )
+const container = tv({
+    base: 'w-full max-w-[83rem] m-auto px-4',
+})
+
+interface ContainerVariants
+    extends ComponentProps<'div'>,
+        VariantProps<typeof container> {}
+
+export function Container({ children, className }: ContainerVariants) {
+    return <div className={container({ className: className })}>{children}</div>
 }

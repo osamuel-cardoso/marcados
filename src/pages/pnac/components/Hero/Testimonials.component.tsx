@@ -42,7 +42,7 @@ export function Testimonials() {
                         />
                     </svg>
                     <h4 className="text-brand__gray/1000 text-[.8125rem] font-regular">
-                        4.8/5.0 de +600 membros
+                        4.9/5 de +200 compras
                     </h4>
                 </div>
             </div>

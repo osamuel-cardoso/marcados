@@ -1,8 +1,8 @@
 import { Container } from '@/app/components/Container'
-import { Testimonials } from '@/app/components/View/components/Hero/components/Testimonials'
 import { Video } from '@/app/components/View/components/Video'
 import { MarcadosBrand } from '@/app/components/icons/MarcadosBrand'
 import Link from 'next/link'
+import { Testimonials } from './Testimonials.component'
 
 export function Hero() {
     return (
@@ -15,13 +15,9 @@ export function Hero() {
                             <h1 className="text-4xl md:text-7xl text-brand__gray-1000 uppercase">
                                 Posicionamento, Nicho & Atração de Clientes.
                             </h1>
-                            <p className="max-w-[41.5rem] text-brand__gray-600 text-[1.0625rem] md:text-[1.125rem]">
-                                Aprenda sobre posicionamento e nicho e como
-                                aplicar estratégias de diferenciação na sua
-                                carreira no mercado criativo. Este curso ensina
-                                desde o básico até técnicas avançadas para que
-                                você possa ser encontrado, ser conhecido e gerar
-                                oportunidades de fechar bons projetos.
+                            <p className="max-w-[32rem] text-brand__gray-600 text-[1.0625rem] md:text-[1.125rem]">
+                                São os três principais assuntos que você precisa
+                                dominar para não ser mais um designer qualquer.
                             </p>
                         </div>
 
@@ -39,15 +35,13 @@ export function Hero() {
                     <div className="flex flex-col gap-4">
                         <Video
                             controls
-                            url={
-                                'https://player.vimeo.com/video/881866338?h=5113a7fdfc'
-                            }
+                            url={'https://player.vimeo.com/video/886984554'}
                         />
 
                         <div className="flex flex-col md:flex-row gap-4 w-full">
                             <div className="md:max-w-[24.25rem]">
                                 <div className="w-full  bg-brand__gray-1000 rounded-xl p-4 flex flex-col justify-between gap-12 lg:min-h-72">
-                                    <h3 className="text-brand__gray-100 leading-tight uppercase text-[.9375rem] md:text-[1.0625rem]">
+                                    <h3 className="text-brand__gray-100 leading-tight uppercase text-[.9375rem] md:text-[1.0625rem] font-bold">
                                         Clique no botão abaixo e entre para o
                                         PNAC
                                     </h3>
@@ -65,7 +59,7 @@ export function Hero() {
                                             className="flex justify-center bg-brand__blue-700_base uppercase font-bold text-brand__gray-1000 rounded-[.25rem] text-[.8125rem] w-full px-4 py-[.875rem] transition hover:bg-brand__gray-100 hover:text-brand__gray-1000"
                                             href={'/subscribe'}
                                         >
-                                            Entre para a lista de espera
+                                            Comece Agora
                                         </Link>
                                     </div>
                                 </div>
@@ -73,11 +67,9 @@ export function Hero() {
                             <div className="bg-brand__gray-200 w-full flex flex-col gap-8 md:justify-between rounded-xl p-4">
                                 <div className="w-full flex flex-col-reverse gap-4 md:flex-row justify-between">
                                     <h3 className="text-[.9375rem] md:text-[1.0625rem] max-w-[36.125rem] uppercase leading-[135%]">
-                                        São mais de 150 aulas, todas com
-                                        materiais de apoio, slides e exercícios.
-                                        Receba todo o direcionamento necessário
-                                        para ser um designer que é pago para
-                                        pensar.
+                                        Aprenda conceitos de posicionamento
+                                        necessários para atrair clientes com
+                                        consistência.
                                     </h3>
                                     <span className="text-brand__gray-600 text-[.8125rem] font-medium">
                                         Ⓜ️ @{new Date().getFullYear()}
@@ -85,9 +77,9 @@ export function Hero() {
                                 </div>
                                 <div className="flex justify-between items-end">
                                     <Testimonials />
-                                    <span className="hidden md:block max-w-[14rem] text-[.875rem] uppercase font-display text-right font-medium text-brand__gray-600">
-                                        CRESÇA NO MERCADO CRIATIVO E VIVA BEM
-                                        FAZENDO O QUE AMA.
+                                    <span className="hidden md:block max-w-[19rem] text-[.875rem] uppercase font-display text-right font-medium text-brand__gray-600">
+                                        Mais de 8 horas de aulas com apoio
+                                        visual e qualidade profissional.
                                     </span>
                                 </div>
                             </div>

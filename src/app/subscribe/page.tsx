@@ -1,5 +1,5 @@
 import { SubscribeContainer } from './components/SubscribeContainer'
 
-export default function page() {
+export default function Page() {
     return <SubscribeContainer />
 }

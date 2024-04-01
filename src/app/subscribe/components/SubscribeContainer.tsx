@@ -15,7 +15,7 @@ export function SubscribeContainer() {
     }
 
     return (
-        <>
+        <main className="bg-brand__gray-100">
             <Container className="overflow-hidden">
                 <section className="md:h-screen">
                     <div className="h-full py-4 flex flex-col gap-8 md:gap-4 md:flex-row md:justify-between">
@@ -67,6 +67,6 @@ export function SubscribeContainer() {
                     </div>
                 </CreateModalPortal>
             )}
-        </>
+        </main>
     )
 }

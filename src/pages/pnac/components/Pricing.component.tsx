@@ -11,15 +11,20 @@ type FeaturesType = {
 }[]
 
 const features: FeaturesType = [
-    { title: '+8h de curso.' },
     {
-        title: 'Exercícios e metodologias práticas.',
+        title: 'Acesso aos 3 módulos: Posicionamento, Nicho e Atração de Clientes',
     },
-    { title: 'Encontros semanais ao vivo' },
+    {
+        title: 'Mais de 8h de aulas com apoio visual e qualidade profissional',
+    },
+    { title: 'Exercícios e metodologias para colocar em prática' },
     { title: 'Estudos de caso com profissionais reais.' },
 
-    { title: 'Curso de Bio da Amanda.' },
-    { title: 'Fórmula do conteúdo do Patrão Matheus.' },
+    { title: 'Curso de Bio c/ Amanda', label: 'Conteúdo extra' },
+    {
+        title: 'Curso Fórmula de Conteúdo c/ Patrão Matheus',
+        label: 'Conteúdo extra',
+    },
 ]
 
 export function Pricing() {
@@ -29,8 +34,8 @@ export function Pricing() {
                 <div className="flex flex-col gap-16">
                     <div className="flex flex-col gap-8">
                         <Heading
-                            heading="Estamos esperando você dentro da comunidade."
-                            cap="Essa é a sua oportunidade de ser diferente dos demais."
+                            heading="POSICIONAMENTO, NICHO & ATRAÇÃO DE CLIENTES."
+                            cap="Seja encontrado, conhecido e gere oportunidades de fechar bons projetos."
                         />
                         <Divider />
                     </div>
