@@ -2,7 +2,7 @@
 
 import { pnacQuestions } from '@/utils/feedbacks/pnac.questions'
 import { useState } from 'react'
-import { Question } from './Question.component'
+import Question from './Question.component'
 
 export default function Faq() {
     const [activeAccordion, setActiveAccordion] = useState(0)

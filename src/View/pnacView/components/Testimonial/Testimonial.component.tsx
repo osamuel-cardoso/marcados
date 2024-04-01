@@ -1,5 +1,5 @@
 import { Container } from '@/app/components/Container'
-import { Slider } from './Slider.component'
+import Slider from './Slider.component'
 
 export default function Testimonial() {
     return (

@@ -15,7 +15,7 @@ const AdaptiveHeight: KeenSliderPlugin = (slider) => {
     slider.on('slideChanged', updateHeight)
 }
 
-export function Slider() {
+export default function Slider() {
     const [sliderRef] = useKeenSlider(
         {
             slides: {
