@@ -9,12 +9,11 @@ import {
 } from '@/utils/features/pnacContent'
 import { Card } from './components/Card.modules'
 
-import shot01 from '@/app/images/shot01.png'
+import { default as shot01, default as shot06 } from '@/app/images/shot01.png'
 import shot02 from '@/app/images/shot02.png'
 import shot03 from '@/app/images/shot03.png'
 import shot04 from '@/app/images/shot04.png'
 import shot05 from '@/app/images/shot05.png'
-import shot06 from '@/app/images/shot01.png'
 import Image from 'next/image'
 
 export default function Modules() {
@@ -31,37 +30,43 @@ export default function Modules() {
                     </div>
                 </Container>
                 <div className="flex items-center flex-col gap-4">
-                    <div className="flex gap-4 w-full p-4 bg-brand__gray-200 translate-x-[-2vw]">
+                    <div className="flex gap-3 md:gap-4 w-full  -translate-x-[120vw] md:translate-x-[-2vw]">
                         <Image
+                            className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
                             src={shot01}
                             alt="Slide do módulo"
                         />
                         <Image
+                            className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
                             src={shot02}
                             alt="Slide do módulo"
                         />
                         <Image
+                            className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
                             src={shot03}
                             alt="Slide do módulo"
                         />
                     </div>
-                    <div className="flex gap-4 p-4 w-full bg-brand__gray-200 translate-x-[2vw]">
+                    <div className="flex gap-3 md:gap-4 w-full -translate-x-[60vw] md:translate-x-[2vw]">
                         <Image
+                            className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
                             src={shot04}
                             alt="Slide do módulo"
                         />
                         <Image
+                            className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
                             src={shot05}
                             alt="Slide do módulo"
                         />
                         <Image
+                            className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
                             src={shot06}
                             alt="Slide do módulo"
                         />
                     </div>
                 </div>
                 <Container>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid md:grid-cols-2 gap-4">
                         <Card
                             fill="filled"
                             title="Posicionamento"
@@ -81,7 +86,7 @@ export default function Modules() {
                             features={atraction}
                         />
                         <Card
-                            fill="filled"
+                            fill="outlined"
                             title="Extras"
                             module="Materiais de apoio"
                             features={extras}

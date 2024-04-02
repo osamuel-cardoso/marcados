@@ -4,7 +4,7 @@ import { useKeenSlider } from 'keen-slider/react'
 
 import { Card } from '@/app/components/Card'
 import { KeenSliderPlugin } from 'keen-slider'
-import { feedbacks } from '@/utils/feedbacks'
+import { feedbacks } from './feedbacks'
 
 const AdaptiveHeight: KeenSliderPlugin = (slider) => {
     function updateHeight() {

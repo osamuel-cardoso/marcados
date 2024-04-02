@@ -3,10 +3,7 @@ import Slider from './Slider.component'
 
 export default function Testimonial() {
     return (
-        <section
-            className="py-20 md:py-28 bg-brand__gray-100 overflow-hidden"
-            id="feedbacks"
-        >
+        <section className="py-20 md:py-28 bg-brand__gray-100 overflow-hidden">
             <Container>
                 <div className="flex flex-col gap-16">
                     <div className="flex flex-col gap-2 items-center md:text-center">
