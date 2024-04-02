@@ -1,4 +1,5 @@
 import MarqueeComponent from 'react-fast-marquee'
+import { Container } from '../components/Container'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/views/View/components/Header'
 
@@ -42,6 +43,13 @@ export default function RootLayout({
             </div>
             {children}
             <Footer />
+            <div className="fixed left-[50%] -translate-x-1/2 bottom-[1vh] flex items-center ">
+                <Container>
+                    <div className="bg-brand__gray-100 bg-opacity-75 p-4 backdrop-blur-lg">
+                        asdaciopnmiqcnmiqnm
+                    </div>
+                </Container>
+            </div>
         </>
     )
 }
