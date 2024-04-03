@@ -69,7 +69,7 @@ export default async function Page() {
 
                             <Link
                                 className="bg-brand__blue-700_base uppercase block justify-end font-bold text-[.6875rem] text-nowrap md:text-[.8125rem] text-brand__gray-1000 px-[.9375rem] py-[.5625rem] rounded-full transition hover:bg-brand__gray-100"
-                                href={'https://pay.kiwify.com.br/jYhenfl'}
+                                href={'/pnac/subscribe'}
                             >
                                 Comece agora
                             </Link>

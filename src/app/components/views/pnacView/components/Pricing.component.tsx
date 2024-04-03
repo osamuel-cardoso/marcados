@@ -68,7 +68,7 @@ export default function Pricing() {
                             </div>
                             <Button
                                 variant={'blue'}
-                                href={'/pnac'}
+                                href={'/pnac/subscribe'}
                             >
                                 Comece Agora!
                             </Button>

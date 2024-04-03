@@ -57,7 +57,7 @@ export default function Hero() {
 
                                         <Link
                                             className="flex justify-center bg-brand__blue-700_base uppercase font-bold text-brand__gray-1000 rounded-[.25rem] text-[.8125rem] w-full px-4 py-[.875rem] transition hover:bg-brand__gray-100 hover:text-brand__gray-1000"
-                                            href={'/subscribe'}
+                                            href={'/pnac/subscribe'}
                                         >
                                             Comece Agora
                                         </Link>

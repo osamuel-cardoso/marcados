@@ -34,7 +34,7 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
             })
             if (status === 200) {
                 reset()
-                replace('/success')
+                replace('https://pay.kiwify.com.br/jYhenfl')
             }
         } catch (error) {
             console.log(error)
