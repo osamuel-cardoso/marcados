@@ -7,7 +7,7 @@ export function Card({
     index,
     resume,
 }: {
-    src?: string | StaticImageData
+    src?: StaticImageData
     heading: string
     content: string
     resume: string
@@ -17,7 +17,7 @@ export function Card({
         <div className="w-full justify-between flex flex-col md:flex-row gap-6 py-8 border-solid border-t border-brand__gray-300">
             <div className="w-full md:max-w-[26.6875rem]">
                 <img
-                    src={src}
+                    src={src?.src}
                     alt="Imagem do módulo"
                 />
             </div>
