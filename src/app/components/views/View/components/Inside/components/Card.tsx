@@ -7,7 +7,7 @@ export function Card({
     index,
     resume,
 }: {
-    src?: string
+    src?: string | StaticImageData
     heading: string
     content: string
     resume: string
