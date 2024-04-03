@@ -27,36 +27,36 @@ export default function Modules() {
                 </Container>
                 <div className="flex items-center flex-col gap-4">
                     <div className="flex gap-3 md:gap-4 w-full  -translate-x-[120vw] md:translate-x-[-2vw]">
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot01}
+                            src={shot01.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot02}
+                            src={shot02.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot03}
+                            src={shot03.src}
                             alt="Slide do módulo"
                         />
                     </div>
                     <div className="flex gap-3 md:gap-4 w-full -translate-x-[60vw] md:translate-x-[2vw]">
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot04}
+                            src={shot04.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot05}
+                            src={shot05.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot06}
+                            src={shot06.src}
                             alt="Slide do módulo"
                         />
                     </div>
