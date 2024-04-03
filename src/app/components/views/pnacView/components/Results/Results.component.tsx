@@ -22,7 +22,7 @@ export function Results() {
                                     Produto original Ⓜ️
                                 </span>
                                 <span className="hidden md:block uppercase text-brand__gray-600 text-[.9375rem] font-bold">
-                                    pnac—©2024
+                                    pnac—©{new Date().getFullYear()}
                                 </span>
                                 <div className="flex flex-col gap-3">
                                     <h3 className="w-full max-w-[30.5rem] uppercase text-[1.3125rem]">

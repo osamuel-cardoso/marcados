@@ -7,13 +7,12 @@ export default function Testimonial() {
             <Container>
                 <div className="flex flex-col gap-16">
                     <div className="flex flex-col gap-2 items-center md:text-center">
-                        <h2 className="text-[1.4375rem] md:text-[2rem] font-bold text-brand__gray-1000 uppercase">
-                            DESTAQUE-SE EM UM MAR DE MESMICE.
+                        <h2 className="text-[1.4375rem] md:text-[2rem] leading-tight font-bold text-brand__gray-1000 uppercase">
+                            Não seja um designer no meio de designers
                         </h2>
                         <p className="text-brand__gray-600 max-w-[29.5rem] text-[.9375rem] md:text-[1.0625rem]">
-                            Este curso te ensina os conceitos de posicionamento
-                            necessários para que você alcance a liderança do seu
-                            setor.
+                            Este curso te ensina os conceitos posicionamento
+                            necessários para atrair clientes com consistência.
                         </p>
                     </div>
 

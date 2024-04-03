@@ -1,20 +1,16 @@
 import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
-import {
-    atraction,
-    extras,
-    industry,
-    positioning,
-} from '@/utils/features/pnacContent'
-import { Card } from './components/Card.modules'
+import skeleton__classe from '@/app/images/skeleton__classe.svg'
 
 import { default as shot01, default as shot06 } from '@/app/images/shot01.png'
 import shot02 from '@/app/images/shot02.png'
 import shot03 from '@/app/images/shot03.png'
 import shot04 from '@/app/images/shot04.png'
 import shot05 from '@/app/images/shot05.png'
+import { atraction, industry, positioning } from '@/utils/features/pnacContent'
 import Image from 'next/image'
+import { Classe } from './components/Classe.module'
 
 export default function Modules() {
     return (
@@ -66,32 +62,27 @@ export default function Modules() {
                     </div>
                 </div>
                 <Container>
-                    <div className="grid md:grid-cols-2 gap-4">
-                        <Card
-                            fill="filled"
-                            title="Posicionamento"
-                            module="Módulo 01"
-                            features={positioning}
-                        />
-                        <Card
-                            fill="filled"
-                            title="Nicho"
-                            module="Módulo 02"
-                            features={industry}
-                        />
-                        <Card
-                            fill="filled"
-                            title="Atração de clientes"
-                            module="Módulo 03"
-                            features={atraction}
-                        />
-                        <Card
-                            fill="outlined"
-                            title="Extras"
-                            module="Materiais de apoio"
-                            features={extras}
-                        />
-                    </div>
+                    <Classe
+                        index={`01`}
+                        content={positioning}
+                        heading="POSICIONAMENTO"
+                        resume="Módulo 01  —  Posicionamento"
+                        src={skeleton__classe.src}
+                    />
+                    <Classe
+                        index={`02`}
+                        content={industry}
+                        heading="Nicho"
+                        resume="Módulo 02  —   Nicho"
+                        src={skeleton__classe.src}
+                    />
+                    <Classe
+                        index={`03`}
+                        content={atraction}
+                        heading="Atração de Clientes"
+                        resume="Módulo 03  —   Atração de Clientes"
+                        src={skeleton__classe.src}
+                    />
                 </Container>
             </div>
         </section>
