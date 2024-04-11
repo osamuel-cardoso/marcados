@@ -36,9 +36,6 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
                 reset()
                 handleSetMount()
             }
-
-            reset()
-            handleSetMount()
         } catch (error) {
             console.log(error)
         }
