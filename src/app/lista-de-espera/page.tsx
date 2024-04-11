@@ -1,10 +1,9 @@
 import { Footer } from '../components/Footer'
 import { Marquee } from '../components/Marquee'
-import { Classes } from '../components/views/View/components/Classes'
 import { Feedbacks } from '../components/views/View/components/Feedbacks'
 import { Header } from '../components/views/View/components/Header'
 import { Hero } from '../components/views/View/components/Hero'
-import { Pricing } from '../components/views/View/components/Pricing'
+import { Pricing } from './components/Pricing.component'
 
 export default function Waitlist() {
     return (
@@ -23,7 +22,6 @@ export default function Waitlist() {
             <Header anchors />
             <Marquee />
             <Hero />
-            <Classes />
             <Pricing />
             <Feedbacks />
             <Footer />
