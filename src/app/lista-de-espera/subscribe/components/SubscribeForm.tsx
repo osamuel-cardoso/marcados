@@ -1,7 +1,6 @@
 'use client'
 
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useRouter } from 'next/navigation'
 import { Controller, useForm } from 'react-hook-form'
 import {
     LeadSchema,
@@ -10,8 +9,6 @@ import {
 } from './useSubscribeForm'
 
 export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
-    const { replace } = useRouter()
-
     const {
         register,
         handleSubmit,
@@ -25,7 +22,7 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
     async function handleRegisterLead(data: LeadSchema) {
         try {
             console.log(data)
-            const { status } = await fetch('/api/mail', {
+            const { status } = await fetch('/api/hall', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -112,7 +109,7 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
                     disabled={isSubmitting}
                     type="submit"
                 >
-                    Continuar inscrição 🏌️‍♂️
+                    {isSubmitting ? 'Carregando...' : 'Continuar inscrição 🏌️‍♂️'}
                 </button>
             </div>
         </form>
