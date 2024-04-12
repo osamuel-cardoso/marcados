@@ -9,6 +9,9 @@ import shot03 from '@/app/images/shot03.png'
 import shot04 from '@/app/images/shot04.png'
 import shot05 from '@/app/images/shot05.png'
 import { atraction, industry, positioning } from '@/utils/features/pnacContent'
+import positionImage from '@/app/images/position.png'
+import industryImage from '@/app/images/industry.png'
+import atractionImage from '@/app/images/atraction.png'
 import Image from 'next/image'
 import { Classe } from './components/Classe.module'
 
@@ -67,21 +70,21 @@ export default function Modules() {
                         content={positioning}
                         heading="POSICIONAMENTO"
                         resume="Módulo 01  —  Posicionamento"
-                        src={skeleton__classe.src}
+                        src={positionImage.src}
                     />
                     <Classe
                         index={`02`}
                         content={industry}
                         heading="Nicho"
                         resume="Módulo 02  —   Nicho"
-                        src={skeleton__classe.src}
+                        src={industryImage.src}
                     />
                     <Classe
                         index={`03`}
                         content={atraction}
                         heading="Atração de Clientes"
                         resume="Módulo 03  —   Atração de Clientes"
-                        src={skeleton__classe.src}
+                        src={atractionImage.src}
                     />
                 </Container>
             </div>
