@@ -5,6 +5,7 @@ import { Heading } from '@/app/components/Heading'
 import atractionImage from '@/app/images/atraction.png'
 import industryImage from '@/app/images/industry.png'
 import positionImage from '@/app/images/position.png'
+import extrasImage from '@/app/images/extras.png'
 import { default as shot01, default as shot06 } from '@/app/images/shot01.png'
 import shot02 from '@/app/images/shot02.png'
 import shot03 from '@/app/images/shot03.png'
@@ -95,7 +96,7 @@ export default function Modules() {
                         content={extras}
                         heading="Atração de Clientes"
                         resume="Módulo 04  —   Extras"
-                        src={atractionImage.src}
+                        src={extrasImage.src}
                     />
                 </Container>
             </div>
