@@ -1,7 +1,6 @@
 import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
-import { Arrow } from './icons/Arrow.icon'
 
 export function Results() {
     return (
@@ -42,8 +41,9 @@ export function Results() {
                         </div>
                         <div className="flex flex-col gap-6 md:gap-11">
                             <div className="flex justify-between">
-                                <Arrow className="hidden md:block" />
-
+                                <span className="hidden md:block font-bold uppercase text-brand__gray-600">
+                                    Posicionamento
+                                </span>
                                 <div className="flex flex-col gap-3">
                                     <span className="md:hidden uppercase font-bold text-brand__gray-600">
                                         (01)
@@ -58,8 +58,9 @@ export function Results() {
                         </div>
                         <div className="flex flex-col gap-6 md:gap-11">
                             <div className="flex justify-between">
-                                <Arrow className="hidden md:block" />
-
+                                <span className="hidden md:block font-bold uppercase text-brand__gray-600">
+                                    Nicho
+                                </span>
                                 <div className="flex flex-col gap-3">
                                     <span className="md:hidden uppercase font-bold text-brand__gray-600">
                                         (02)
@@ -74,8 +75,9 @@ export function Results() {
                         </div>
                         <div className="flex flex-col gap-6 md:gap-11">
                             <div className="flex justify-between">
-                                <Arrow className="hidden md:block" />
-
+                                <span className="hidden md:block font-bold uppercase text-brand__gray-600">
+                                    Atração de clientes
+                                </span>
                                 <div className="flex flex-col gap-3">
                                     <span className="md:hidden uppercase font-bold text-brand__gray-600">
                                         (03)

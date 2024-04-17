@@ -1,15 +1,22 @@
 import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
-import skeleton__classe from '@/app/images/skeleton__classe.svg'
 
+import atractionImage from '@/app/images/atraction.png'
+import industryImage from '@/app/images/industry.png'
+import positionImage from '@/app/images/position.png'
+import extrasImage from '@/app/images/extras.png'
 import { default as shot01, default as shot06 } from '@/app/images/shot01.png'
 import shot02 from '@/app/images/shot02.png'
 import shot03 from '@/app/images/shot03.png'
 import shot04 from '@/app/images/shot04.png'
 import shot05 from '@/app/images/shot05.png'
-import { atraction, industry, positioning } from '@/utils/features/pnacContent'
-import Image from 'next/image'
+import {
+    atraction,
+    extras,
+    industry,
+    positioning,
+} from '@/utils/features/pnacContent'
 import { Classe } from './components/Classe.module'
 
 export default function Modules() {
@@ -26,37 +33,37 @@ export default function Modules() {
                     </div>
                 </Container>
                 <div className="flex items-center flex-col gap-4">
-                    <div className="flex gap-3 md:gap-4 w-full  -translate-x-[120vw] md:translate-x-[-2vw]">
-                        <Image
+                    <div className="flex gap-3 md:gap-4 w-full  -translate-x-[88vw] sm:-translate-x-[40vw] md:translate-x-[-2vw]">
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot01}
+                            src={shot01.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot02}
+                            src={shot02.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot03}
+                            src={shot03.src}
                             alt="Slide do módulo"
                         />
                     </div>
-                    <div className="flex gap-3 md:gap-4 w-full -translate-x-[60vw] md:translate-x-[2vw]">
-                        <Image
+                    <div className="flex gap-3 md:gap-4 w-full -translate-x-[60vw] sm:-translate-x-[40vw] md:translate-x-[2vw]">
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot04}
+                            src={shot04.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot05}
+                            src={shot05.src}
                             alt="Slide do módulo"
                         />
-                        <Image
+                        <img
                             className="max-h-[12.75rem] md:max-h-max p-3 md:p-4 bg-brand__gray-200 rounded-lg md:rounded-3xl"
-                            src={shot06}
+                            src={shot06.src}
                             alt="Slide do módulo"
                         />
                     </div>
@@ -67,21 +74,29 @@ export default function Modules() {
                         content={positioning}
                         heading="POSICIONAMENTO"
                         resume="Módulo 01  —  Posicionamento"
-                        src={skeleton__classe.src}
+                        src={positionImage.src}
                     />
                     <Classe
                         index={`02`}
                         content={industry}
                         heading="Nicho"
                         resume="Módulo 02  —   Nicho"
-                        src={skeleton__classe.src}
+                        src={industryImage.src}
                     />
                     <Classe
                         index={`03`}
                         content={atraction}
                         heading="Atração de Clientes"
                         resume="Módulo 03  —   Atração de Clientes"
-                        src={skeleton__classe.src}
+                        src={atractionImage.src}
+                    />
+
+                    <Classe
+                        index={`04`}
+                        content={extras}
+                        heading="Atração de Clientes"
+                        resume="Extras"
+                        src={extrasImage.src}
                     />
                 </Container>
             </div>
