@@ -94,8 +94,8 @@ export default function Modules() {
                     <Classe
                         index={`04`}
                         content={extras}
-                        heading="Atração de Clientes"
-                        resume="Extras"
+                        heading="Extras"
+                        resume="Módulo extra"
                         src={extrasImage.src}
                     />
                 </Container>
