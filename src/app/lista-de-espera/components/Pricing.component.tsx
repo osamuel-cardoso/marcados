@@ -44,7 +44,7 @@ export function Pricing() {
                 <div className="flex flex-col gap-16">
                     <div className="flex flex-col gap-8">
                         <Heading
-                            heading="Estamos esperando você dentro da comunidade."
+                            heading="Enquanto você espera a abertura de Junho, aguarde no Hall do Marcados."
                             cap="Essa é a sua oportunidade de ser diferente dos demais."
                         />
                         <Divider />
@@ -75,7 +75,7 @@ export function Pricing() {
                                     variant={'blue'}
                                     href={'/lista-de-espera/subscribe'}
                                 >
-                                    Entre para a lista de espera
+                                    Entrar na lista de espera e HallⓂ️
                                 </Button>
                             </div>
                         </div>
