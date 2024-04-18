@@ -1,6 +1,6 @@
 import { Container } from '@/app/components/Container'
-import { Video } from '@/app/components/views/View/components/Video'
 import { MarcadosBrand } from '@/app/components/icons/MarcadosBrand'
+import { Video } from '@/app/components/views/View/components/Video'
 import Link from 'next/link'
 import Testimonials from './Testimonials.component'
 
@@ -35,7 +35,9 @@ export default function Hero() {
                     <div className="flex flex-col gap-4">
                         <Video
                             controls
-                            url={'https://player.vimeo.com/video/886984554'}
+                            url={
+                                'https://player.vimeo.com/video/886984554?app_id=122963'
+                            }
                         />
 
                         <div className="flex flex-col md:flex-row gap-4 w-full">
