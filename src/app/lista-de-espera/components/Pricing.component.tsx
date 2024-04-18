@@ -17,24 +17,9 @@ type FeaturesType = (
 )[]
 
 const features: FeaturesType = [
-    { title: '12 meses de acesso à comunidade' },
-    { title: '+130 aulas e contando', label: 'Atualização contínua' },
-    { title: 'Encontros semanais ao vivo' },
-    { title: 'Curso Método N.A.V.E' },
-    {
-        title: 'Curso Código de Vendas — temporada 1 e 2',
-        label: 'Atualização!',
-    },
-    { title: 'Curso Branding 101' },
-    { title: 'Projeto Vitória' },
-    {
-        title: 'Playlists didáticas e cronograma de conteúdo',
-    },
-    {
-        title: 'Acesso ao grupo exclusivo no Telegram',
-    },
-    { title: 'Clube do Livro' },
-    { title: 'Templates', label: 'Novo!' },
+    { title: 'O mapa do branding' },
+    { title: 'Estratégia de marca, onde tudo começou' },
+    { title: 'Especialista vs. Generalista' },
 ]
 
 export function Pricing() {
