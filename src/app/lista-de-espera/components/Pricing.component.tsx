@@ -54,10 +54,6 @@ export function Pricing() {
                             <div className="flex flex-col gap-8">
                                 <div className="flex flex-col gap-6">
                                     <Feature
-                                        title="Tenha acesso a materiais exclusivos."
-                                        subtitle="Receba acesso ao Hall do Marcados."
-                                    />
-                                    <Feature
                                         title="Aguarde no Hall do Marcados enquanto espera a próxima turma"
                                         subtitle="
                                         Como membro da lista de espera, terá acesso no Notion a aulas selecionadas da plataforma do Grupo Marcados Ⓜ️."
