@@ -17,9 +17,9 @@ type FeaturesType = (
 )[]
 
 const features: FeaturesType = [
-    { title: 'O mapa do branding' },
-    { title: 'Estratégia de marca, onde tudo começou' },
-    { title: 'Especialista vs. Generalista' },
+    { title: '79. O mapa do branding' },
+    { title: '17. Estratégia de marca, onde tudo começou' },
+    { title: '55. Especialista vs. Generalista' },
 ]
 
 export function Pricing() {
