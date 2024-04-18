@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
@@ -120,7 +121,7 @@ export default function RootLayout({
             lang="pt-BR"
             className={`${neueHaasDisplay.variable} ${neueHaasText.variable}`}
         >
-            {/* <GoogleAnalytics gaId="GTM-MFXQDVC" /> */}
+            <GoogleAnalytics gaId="GTM-MFXQDVC" />
             <body>{children}</body>
         </html>
     )

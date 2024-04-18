@@ -17,17 +17,6 @@ export default function Page() {
 
     return (
         <>
-            <noscript>
-                <iframe
-                    src="https://www.googletagmanager.com/ns.html?id=GTM-MFXQDVC"
-                    height="0"
-                    width="0"
-                    style={{
-                        display: 'none',
-                        visibility: 'hidden',
-                    }}
-                ></iframe>
-            </noscript>
             <Header />
             <Marquee />
             <Hero />
