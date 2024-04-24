@@ -2,7 +2,7 @@ import { Footer } from '../components/Footer'
 import { Marquee } from '../components/Marquee'
 import { Feedbacks } from '../components/views/View/components/Feedbacks'
 import { Header } from '../components/views/View/components/Header'
-import { Hero } from '../components/views/View/components/Hero'
+import { Hero } from './components/Hero'
 import { Pricing } from './components/Pricing.component'
 
 export default function Waitlist() {

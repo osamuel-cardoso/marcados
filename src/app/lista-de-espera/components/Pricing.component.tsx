@@ -3,23 +3,31 @@ import { Container } from '@/app/components/Container'
 import { Divider } from '@/app/components/Divider'
 import { Heading } from '@/app/components/Heading'
 import { Feature } from '@/app/components/views/View/components/Pricing/Feature'
-import { Offer } from '@/app/components/views/View/components/Pricing/Offer'
+import aula17 from '@/app/images/aula 17.jpeg'
+import aula79 from '@/app/images/aula 79.jpeg'
+import aula123 from '@/app/images/aula-123.jpeg'
+import aula55 from '@/app/images/aula 55.jpeg'
+import { StaticImageData } from 'next/image'
+import { Offer } from './Offer'
 
 type FeaturesType = (
     | {
           title: string
           label?: undefined
+          class: StaticImageData
       }
     | {
           title: string
           label: string
+          class: StaticImageData
       }
 )[]
 
 const features: FeaturesType = [
-    { title: '79. O mapa do branding' },
-    { title: '17. Estratégia de marca, onde tudo começou' },
-    { title: '55. Especialista vs. Generalista' },
+    { title: 'Estratégia de marca, onde tudo começou', class: aula17 },
+    { title: 'Especialista vs. Generalista', class: aula55 },
+    { title: 'O mapa do branding', class: aula79 },
+    { title: 'Sistemas para se manter disciplinado', class: aula123 },
 ]
 
 export function Pricing() {
@@ -29,8 +37,8 @@ export function Pricing() {
                 <div className="flex flex-col gap-16">
                     <div className="flex flex-col gap-8">
                         <Heading
-                            heading="Enquanto você espera a abertura de Junho, aguarde no Hall do Marcados."
-                            cap="Essa é a sua oportunidade de ser diferente dos demais."
+                            heading="Entre agora para o Hall de Entrada do Marcados©"
+                            cap="Explore a comunidade por dentro através da nossa plataforma de conteúdo no Notion e veja tudo que tem dentro da comunidade."
                         />
                         <Divider />
                     </div>
@@ -38,25 +46,16 @@ export function Pricing() {
                         <div className="flex flex-col gap-8 md:sticky md:top-12 w-full md:max-w-[37%]">
                             <div className="flex flex-col gap-8">
                                 <div className="flex flex-col gap-6">
-                                    <Feature
-                                        title="Aguarde no Hall do Marcados enquanto espera a próxima turma"
-                                        subtitle="
-                                        Como membro da lista de espera, terá acesso no Notion a aulas selecionadas da plataforma do Grupo Marcados Ⓜ️."
-                                    />
-                                    <Feature
-                                        title="Seja avisado com antecedência."
-                                        subtitle="Tenha prioridade no aviso da próxima turma"
-                                    />
-                                    <Feature
-                                        title="Faça parte da lista de pré-venda."
-                                        subtitle="Em toda turma, liberamos condições espciais"
-                                    />
+                                    <Feature title="Tenha acesso à 4 aulas exclusivas" />
+                                    <Feature title="Seja avisado com antecendência sobre a próxima abertura" />
+                                    <Feature title="Explore a comunidade por dentro através da nossa plataforma de conteúdo no Notion" />
+                                    <Feature title="Faça parte da lista de pré-venda e garanta condições especiais" />
                                 </div>
                                 <Button
                                     variant={'blue'}
                                     href={'/lista-de-espera/subscribe'}
                                 >
-                                    Entrar na lista de espera e HallⓂ️
+                                    QUERO TER ACESSO AO HALLⓂ️
                                 </Button>
                             </div>
                         </div>
@@ -68,6 +67,7 @@ export function Pricing() {
                                     heading={feature.title}
                                     label={feature.label}
                                     index={index}
+                                    src={feature.class.src}
                                 />
                             ))}
                         </div>
