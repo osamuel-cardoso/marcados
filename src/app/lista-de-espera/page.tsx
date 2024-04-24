@@ -19,7 +19,7 @@ export default function Waitlist() {
                     }}
                 ></iframe>
             </noscript>
-            <Header anchors />
+            <Header />
             <Marquee />
             <Hero />
             <Pricing />

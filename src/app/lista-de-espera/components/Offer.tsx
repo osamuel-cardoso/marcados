@@ -12,7 +12,7 @@ export function Offer({
     return (
         <div className="flex flex-col gap-5">
             <img
-                className="w-full rounded-lg"
+                className="w-full rounded-lg object-cover md:max-h-[8rem]"
                 src={src}
                 alt=""
             />
