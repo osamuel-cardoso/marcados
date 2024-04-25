@@ -1,4 +1,3 @@
-import { redirect } from 'next/navigation'
 import { Footer } from '../components/Footer'
 import { Marquee } from '../components/Marquee'
 import { Carousel } from '../components/views/View/components/Carousel'
@@ -13,8 +12,6 @@ import { Pricing } from '../components/views/View/components/Pricing'
 import { Questions } from '../components/views/View/components/Questions'
 
 export default function Page() {
-    redirect('/lista-de-espera')
-
     return (
         <>
             <Header />
