@@ -1,7 +1,8 @@
 import { Container } from '@/app/components/Container'
 import { MarcadosBrand } from '@/app/components/icons/MarcadosBrand'
-import { FeatureCards } from '../FeatureCards'
+
 import { Video } from '../Video'
+import { FeatureCards } from '../FeatureCards'
 
 export function Hero() {
     return (

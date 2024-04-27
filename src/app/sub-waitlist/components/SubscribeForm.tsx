@@ -1,15 +1,27 @@
 'use client'
 
+import { formatPhoneNumber } from '@/app/pnac/subscribe/components/useSubscribeForm'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useRouter } from 'next/navigation'
-import { useForm } from 'react-hook-form'
+import { Controller, useForm } from 'react-hook-form'
 import { z } from 'zod'
 
 const leadSchema = z.object({
-    leadName: z.string().min(2, 'Por favor, preencha seu nome.'),
+    leadName: z.string().refine((value) => /\b\w+\b \w/.test(value), {
+        message: 'Por favor, escreva seu nome e sobrenome',
+    }),
 
     leadEmail: z.string().email('Informe um endereço de e-mail válido'),
-    phoneNumber: z.string().min(2, 'Digite um número de telefone válido'),
+    phoneNumber: z
+        .string()
+        .min(10, 'O número de telefone deve ter pelo menos 10 dígitos')
+        .transform((data) => {
+            return data
+                .replace(/\D/g, '')
+                .replace(/^(\d{2})(\d)/g, '($1) $2')
+                .replace(/^\((\d{2})\) 9/, '($1) 9 ')
+                .replace(/(\d)(\d{4})$/, '$1-$2')
+        }),
 })
 
 type LeadSchema = z.infer<typeof leadSchema>
@@ -21,6 +33,7 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
         register,
         handleSubmit,
         reset,
+        control,
         formState: { errors, isSubmitting },
     } = useForm<LeadSchema>({
         resolver: zodResolver(leadSchema),
@@ -85,15 +98,25 @@ export function Subscribe({ handleSetMount }: { handleSetMount(): void }) {
                     className="flex flex-col gap-3 uppercase font-medium text-[.8125rem] md:text-[.9375rem]"
                 >
                     Seu telefone
-                    <input
-                        className="px-[1.3125rem] md:h-[4rem] py-4 text-[.9375rem] md:text-base uppercase bg-[transparent] border border-solid border-brand__gray-300 rounded focus:border-brand__gray-500 focus-visible:border-brand__gray-500"
-                        placeholder="9 8809-0092"
-                        id="phoneNumber"
-                        maxLength={11}
-                        {...register('phoneNumber')}
-                        required
+                    <Controller
+                        name="phoneNumber"
+                        control={control}
+                        render={({ field }) => (
+                            <input
+                                {...field}
+                                className="px-[1.3125rem] md:h-[4rem] py-4 text-[.9375rem] md:text-base uppercase bg-[transparent] border border-solid border-brand__gray-300 rounded focus:border-brand__gray-500 focus-visible:border-brand__gray-500"
+                                placeholder="(11) 9 8809-0092"
+                                id="phoneNumber"
+                                required
+                                value={formatPhoneNumber(field.value)}
+                                onChange={(e) => {
+                                    field.onChange(e.target.value)
+                                }}
+                                maxLength={16}
+                            />
+                        )}
                     />
-                    <span className="text-[.875rem] normal-case font-text font-normal text-brand__gray-700">
+                    <span className="text-[.9375rem] normal-case font-text font-normal text-brand__gray-700">
                         {errors.phoneNumber?.message}
                     </span>
                 </label>

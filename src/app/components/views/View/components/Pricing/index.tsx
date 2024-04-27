@@ -72,15 +72,6 @@ export function Pricing() {
                                 </div> */}
                                 <div className="flex flex-col gap-6">
                                     <Feature
-                                        title="Tenha acesso a materiais exclusivos."
-                                        subtitle="Receba acesso ao Hall do Marcados."
-                                    />
-                                    <Feature
-                                        title="Aguarde no Hall do Marcados enquanto espera a próxima turma"
-                                        subtitle="
-                                        Como membro da lista de espera, terá acesso no Notion a aulas selecionadas da plataforma do Grupo Marcados Ⓜ️."
-                                    />
-                                    <Feature
                                         title="Seja avisado com antecedência."
                                         subtitle="Tenha prioridade no aviso da próxima turma"
                                     />
@@ -91,7 +82,7 @@ export function Pricing() {
                                 </div>
                                 <Button
                                     variant={'blue'}
-                                    href={'/subscribe'}
+                                    href={'/sub-waitlist'}
                                 >
                                     Entre para a lista de espera
                                 </Button>

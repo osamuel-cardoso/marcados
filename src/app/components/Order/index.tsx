@@ -10,9 +10,9 @@ export function Order() {
             <div className="flex flex-col gap-[1.125rem]">
                 <Link
                     className="flex justify-center bg-brand__blue-700_base uppercase font-bold text-brand__gray-1000 rounded-[.25rem] text-[.8125rem] w-full px-4 py-[.875rem] transition hover:bg-brand__gray-100 hover:text-brand__gray-1000"
-                    href={'/lista-de-espera/subscribe'}
+                    href={'/sub-waitlist'}
                 >
-                    QUERO TER ACESSO AO HALLⓂ️
+                    Entre para a lista de esperaⓂ️
                 </Link>
             </div>
         </div>

@@ -9,7 +9,7 @@ export default function Success() {
                         avisado(a) no email preenchido anteriormente.
                     </p>
                 </div>
-                <p>©2023 ANDRÉ LONA</p>
+                <p>©{new Date().getFullYear()} ANDRÉ LONA</p>
             </div>
         </main>
     )
